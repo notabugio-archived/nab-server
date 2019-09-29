@@ -436,14 +436,14 @@
     ramda "^0.26.1"
     route-parser "^0.0.5"
 
-"@notabug/nab-indexer@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.3.tgz#9178f1be80f68017b520ddb98bd65278fc44c2cb"
-  integrity sha512-SAvRxC0S1goNczAV2Pa590PvgOvYjf1u+gdE7XJo2F1QVKChHhiisgTRnUozQPTmOVBzVlfYodtcuzINVRXXwg==
+"@notabug/nab-indexer@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.4.tgz#1fbd449e8e75c1a2c4c1c3be49468e2c54f2f9b1"
+  integrity sha512-2fKG2w7CkvQ0+nBRbprv4zcYiSeII5vKBKeN6GlwxmsOnGisoD8F5RjhlO2HBd9oj9JJYhWHIqKdNWb4USZKiA==
   dependencies:
     "@notabug/chaingun-sear" "^0.0.10"
     "@notabug/chaingun-socket-cluster-connector" "^0.0.2"
-    "@notabug/peer" "^0.33.0"
+    "@notabug/peer" "^0.34.0"
     dotenv "^8.1.0"
 
 "@notabug/nab-lmdb-storage@^0.0.3":
@@ -485,6 +485,23 @@
   version "0.33.0"
   resolved "https://registry.yarnpkg.com/@notabug/peer/-/peer-0.33.0.tgz#a4896e84faca2d85f635c35e787d57298d0a75c0"
   integrity sha512-AvxDi+DR6zqUfc7dxHMmViA795/mybTOqrO5yMy49S4a0r/ibFkfeKVzIvDYXtPh3/z7AyMF9jwVoY/klx0jzA==
+  dependencies:
+    "@notabug/gun-scope" "^0.10.0"
+    "@notabug/gun-suppressor" "^0.2.2"
+    "@notabug/gun-suppressor-sear" "^0.3.1"
+    argon2 "^0.21.0"
+    fast-memoize "^2.5.1"
+    object-hash "^1.3.1"
+    query-string "^6.4.2"
+    ramda "^0.26.1"
+    route-parser "0.0.5"
+    uri-js "^4.2.2"
+    zalgo-promise "1.0.28"
+
+"@notabug/peer@^0.34.0":
+  version "0.34.0"
+  resolved "https://registry.yarnpkg.com/@notabug/peer/-/peer-0.34.0.tgz#e0403e04591f842899beb406523a89cc19b6fe6b"
+  integrity sha512-wp9GTMZK3ilQeTbQVT49s6JiZSo+EU5uV4hQibiLJ6qOeARwFrD9Wh1ZUK1KAMfngMEKJfwUVlIkLsxGhy5aPQ==
   dependencies:
     "@notabug/gun-scope" "^0.10.0"
     "@notabug/gun-suppressor" "^0.2.2"
