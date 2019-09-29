@@ -332,6 +332,14 @@
     "@notabug/chaingun" "^0.0.11"
     node-lmdb "^0.7.0"
 
+"@notabug/chaingun-sear@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@notabug/chaingun-sear/-/chaingun-sear-0.0.10.tgz#20d002ac9b3cb405ee6e9008a48120f3c25c0f78"
+  integrity sha512-LgXyGXVCTsWJqvU/slnZKFXwWXUv8iPB4DQVvijL1y8qpdOeiUOCMBxdXDX5tqwzlk8gvOLZrHZJsbIrDGcCEQ==
+  dependencies:
+    "@notabug/chaingun" "^0.0.13"
+    "@notabug/gun-sear" "^0.0.15"
+
 "@notabug/chaingun-sear@^0.0.9":
   version "0.0.9"
   resolved "https://registry.yarnpkg.com/@notabug/chaingun-sear/-/chaingun-sear-0.0.9.tgz#efe10bf5a27048aca08885c08ac74dc7d9ca968a"
@@ -361,6 +369,13 @@
   version "0.0.12"
   resolved "https://registry.yarnpkg.com/@notabug/chaingun/-/chaingun-0.0.12.tgz#fcc1ddcd70af0201d0129f4eafbbdc0dc79f0d37"
   integrity sha512-StpfRcBO3n8Sn4fXPxPE0WkLDI6zKZMhhybEvozTlQ1iT2WZsdb0mazBaF80OJXLv2tGxwROxZKTMDNuQlvD8w==
+  dependencies:
+    reconnecting-websocket "^4.2.0"
+
+"@notabug/chaingun@^0.0.13":
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/@notabug/chaingun/-/chaingun-0.0.13.tgz#9d93d8486f0ca22ece8a9cd26d8d03b74b5b8233"
+  integrity sha512-kkZdq+5LTbiEzj8E+OsWADz7hNCuIvv7/ka7jlvZTu9PLb8aIbH5+SV9eC1abZK4PjjNAiJ1NfcjjjccMeWHhg==
   dependencies:
     reconnecting-websocket "^4.2.0"
 
@@ -421,12 +436,12 @@
     ramda "^0.26.1"
     route-parser "^0.0.5"
 
-"@notabug/nab-indexer@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.2.tgz#48b97d1d9cdeadeca4470d0ffab9f5ab633065af"
-  integrity sha512-O1cpd+RRfFkNYTyAjJUuSX9V9EgSKm7sTnUT/C8MbHekLd8QzFRhYiqk51ZaVjFgK0/p81cKV7RtJIMqwCcbzQ==
+"@notabug/nab-indexer@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.3.tgz#9178f1be80f68017b520ddb98bd65278fc44c2cb"
+  integrity sha512-SAvRxC0S1goNczAV2Pa590PvgOvYjf1u+gdE7XJo2F1QVKChHhiisgTRnUozQPTmOVBzVlfYodtcuzINVRXXwg==
   dependencies:
-    "@notabug/chaingun-sear" "^0.0.9"
+    "@notabug/chaingun-sear" "^0.0.10"
     "@notabug/chaingun-socket-cluster-connector" "^0.0.2"
     "@notabug/peer" "^0.33.0"
     dotenv "^8.1.0"
