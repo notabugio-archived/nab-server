@@ -332,13 +332,13 @@
     "@notabug/chaingun" "^0.0.11"
     node-lmdb "^0.7.0"
 
-"@notabug/chaingun-sear@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/@notabug/chaingun-sear/-/chaingun-sear-0.0.10.tgz#20d002ac9b3cb405ee6e9008a48120f3c25c0f78"
-  integrity sha512-LgXyGXVCTsWJqvU/slnZKFXwWXUv8iPB4DQVvijL1y8qpdOeiUOCMBxdXDX5tqwzlk8gvOLZrHZJsbIrDGcCEQ==
+"@notabug/chaingun-sear@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@notabug/chaingun-sear/-/chaingun-sear-0.0.11.tgz#5e0517ae08d226ee6dbe137a3fb7a38abdc3717b"
+  integrity sha512-RZ9XbthlvgIVH8c2dmiWMY2PZJjBUr0D4AAyB1/jG7Y0BURl7Uut8WA2emVzXu/cIMWh6FAAkcCxmWWxhq2mBQ==
   dependencies:
-    "@notabug/chaingun" "^0.0.13"
-    "@notabug/gun-sear" "^0.0.15"
+    "@notabug/chaingun" "^0.0.14"
+    "@notabug/gun-sear" "^0.0.16"
 
 "@notabug/chaingun-socket-cluster-connector@^0.0.2":
   version "0.0.2"
@@ -364,10 +364,10 @@
   dependencies:
     reconnecting-websocket "^4.2.0"
 
-"@notabug/chaingun@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@notabug/chaingun/-/chaingun-0.0.13.tgz#9d93d8486f0ca22ece8a9cd26d8d03b74b5b8233"
-  integrity sha512-kkZdq+5LTbiEzj8E+OsWADz7hNCuIvv7/ka7jlvZTu9PLb8aIbH5+SV9eC1abZK4PjjNAiJ1NfcjjjccMeWHhg==
+"@notabug/chaingun@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@notabug/chaingun/-/chaingun-0.0.14.tgz#eaa5e4a8549f900c3ba97b4e61748d2e91ec117e"
+  integrity sha512-urvNKu7P5rTm/tYbIJQw1w8FoFdhp/Cr63EeyrPaU495dc7Q5ZBj74bTqI0GEd0atIBI2AfWFxOka5ETUlK3+Q==
   dependencies:
     reconnecting-websocket "^4.2.0"
 
@@ -393,6 +393,16 @@
   version "0.0.15"
   resolved "https://registry.yarnpkg.com/@notabug/gun-sear/-/gun-sear-0.0.15.tgz#69aa0eaa2fbb4a8314df27387e628bd04c85f818"
   integrity sha512-Jlbnq9mvqL9PEC/lTZe1zyOY8f33MXIRxhf9urf7fLz82L+ifDeiibPa2MXpBauxzOuhDdNtpLKUUy8DH9OMng==
+  dependencies:
+    "@peculiar/webcrypto" "^1.0.19"
+    "@types/window-or-global" "^1.0.0"
+    text-encoding "^0.7.0"
+    window-or-global "^1.0.1"
+
+"@notabug/gun-sear@^0.0.16":
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/@notabug/gun-sear/-/gun-sear-0.0.16.tgz#7196b9afdcfe07b78a5eacc9657414e4a4d4ec26"
+  integrity sha512-WK5Efq2kaRQXjLpGW85ZJh/cNxJWZihEifEGSvRHvAPXLvDaq+24FjgrvtaimXpeeeiW3dC6QJavfTU5SzVDqQ==
   dependencies:
     "@peculiar/webcrypto" "^1.0.19"
     "@types/window-or-global" "^1.0.0"
@@ -428,12 +438,12 @@
     ramda "^0.26.1"
     route-parser "^0.0.5"
 
-"@notabug/nab-indexer@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.4.tgz#1fbd449e8e75c1a2c4c1c3be49468e2c54f2f9b1"
-  integrity sha512-2fKG2w7CkvQ0+nBRbprv4zcYiSeII5vKBKeN6GlwxmsOnGisoD8F5RjhlO2HBd9oj9JJYhWHIqKdNWb4USZKiA==
+"@notabug/nab-indexer@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.5.tgz#c7ecc019bb00810bb14f09d807b30a273193e5dd"
+  integrity sha512-VLqEgHDlbkXt5PDS3yD3+hpi8B3GfUX0K/qWYdCTyYrnThHDTzvLATn7ZaKuETcsGyVhQQUqDLJMXj2e/Zp3NQ==
   dependencies:
-    "@notabug/chaingun-sear" "^0.0.10"
+    "@notabug/chaingun-sear" "^0.0.11"
     "@notabug/chaingun-socket-cluster-connector" "^0.0.2"
     "@notabug/peer" "^0.34.0"
     dotenv "^8.1.0"
@@ -452,12 +462,12 @@
     sha.js "^2.4.11"
     ws "^7.1.2"
 
-"@notabug/nab-tabulator@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.4.tgz#cbb16151964306b139b50468ca870ef5eb05f645"
-  integrity sha512-ETkxoIsjVMskN3t+abEaOe8xWccGI9Pr9DLFkoecdvc1eyBIDf0d2WMYpRIEyFUiVx/hTScw/v3PjjtGNGab4g==
+"@notabug/nab-tabulator@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.5.tgz#fd90a757d7c1dcf11f986a53ae2a356c10fdc456"
+  integrity sha512-fWiy0j+Y1AVKK1SZsxA5N1NVzSrhw21hP751yzA5XWJJzHuFIXUBE+LSleGVohsS6LrEXlxOG55sacZ0C/0ctg==
   dependencies:
-    "@notabug/chaingun-sear" "^0.0.10"
+    "@notabug/chaingun-sear" "^0.0.11"
     "@notabug/chaingun-socket-cluster-connector" "^0.0.2"
     "@notabug/peer" "^0.36.0"
     dotenv "^8.1.0"

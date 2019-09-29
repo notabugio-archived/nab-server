@@ -1,6 +1,6 @@
 {
   "name": "@notabug/nab-server",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "notabug.io SocketCluster server",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -58,11 +58,11 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "@notabug/chaingun": "^0.0.13",
+    "@notabug/chaingun": "^0.0.14",
     "@notabug/gun-socketcluster-worker": "^0.0.4",
-    "@notabug/nab-indexer": "^0.0.4",
+    "@notabug/nab-indexer": "^0.0.5",
     "@notabug/nab-lmdb-storage": "^0.0.3",
-    "@notabug/nab-tabulator": "^0.0.4",
+    "@notabug/nab-tabulator": "^0.0.5",
     "@notabug/nab-wire-validation": "^0.0.3",
     "compression": "^1.7.4",
     "dotenv": "^8.1.0",
@@ -95,8 +95,12 @@
   },
   "ava": {
     "failFast": true,
-    "files": ["build/main/**/*.spec.js"],
-    "sources": ["build/main/**/*.js"]
+    "files": [
+      "build/main/**/*.spec.js"
+    ],
+    "sources": [
+      "build/main/**/*.js"
+    ]
   },
   "config": {
     "commitizen": {
@@ -108,6 +112,8 @@
   },
   "nyc": {
     "extends": "@istanbuljs/nyc-config-typescript",
-    "exclude": ["**/*.spec.js"]
+    "exclude": [
+      "**/*.spec.js"
+    ]
   }
 }
