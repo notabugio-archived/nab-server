@@ -431,10 +431,10 @@
     "@notabug/peer" "^0.33.0"
     dotenv "^8.1.0"
 
-"@notabug/nab-lmdb-storage@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-lmdb-storage/-/nab-lmdb-storage-0.0.2.tgz#61ef3521c6f58d09903aaac170cf21ab599e145b"
-  integrity sha512-Ed24j6gZQhm/v+lAj3vv9/gwk7nKxmMktIqA4jBa84Vqa+UuqT1oPirrqUQ0cNMLY4kA4XzpRy7l+4OMK35Y8g==
+"@notabug/nab-lmdb-storage@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-lmdb-storage/-/nab-lmdb-storage-0.0.3.tgz#f3337da3284a79d5d17c6d3b2302e308f420c9c7"
+  integrity sha512-+hiND/MKLsANfwMI1tI5NugE8MOtYk+YxaDYy9t0Rcu/DCn9yiJ+c8CQoj07slv8g40B1C2SwM+vuxbLY830qw==
   dependencies:
     "@notabug/chaingun" "^0.0.12"
     "@notabug/chaingun-lmdb" "^0.0.5"
@@ -445,10 +445,10 @@
     sha.js "^2.4.11"
     ws "^7.1.2"
 
-"@notabug/nab-tabulator@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.1.tgz#b5824e6fedc56d92b84a822ff55fa0bba5ed6cfd"
-  integrity sha512-JL2qkjPB5EbMkVKq9ZPEtKEMP9dFHbDC6VWqrNj15rVE4Ym1gIX21ldn4y4TzsNS5Ne/6QmFmEUCt2Fl2EXJJQ==
+"@notabug/nab-tabulator@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.2.tgz#c4b5b266be367df808575394f47a2618a7aa1a4d"
+  integrity sha512-XtAbAhaa7jFBtV/U0md61+32Rhcrh6sPfGHIjX7Ss4E4dyKHbTbbfhntCsuYuDVd1v7fW4OUB3E+jd+8yXIZ5w==
   dependencies:
     "@notabug/chaingun-sear" "^0.0.9"
     "@notabug/chaingun-socket-cluster-connector" "^0.0.2"

@@ -61,8 +61,8 @@
     "@notabug/chaingun": "^0.0.12",
     "@notabug/gun-socketcluster-worker": "^0.0.4",
     "@notabug/nab-indexer": "^0.0.1",
-    "@notabug/nab-lmdb-storage": "^0.0.2",
-    "@notabug/nab-tabulator": "^0.0.1",
+    "@notabug/nab-lmdb-storage": "^0.0.3",
+    "@notabug/nab-tabulator": "^0.0.2",
     "@notabug/nab-wire-validation": "^0.0.2",
     "compression": "^1.7.4",
     "dotenv": "^8.1.0",
@@ -95,8 +95,12 @@
   },
   "ava": {
     "failFast": true,
-    "files": ["build/main/**/*.spec.js"],
-    "sources": ["build/main/**/*.js"]
+    "files": [
+      "build/main/**/*.spec.js"
+    ],
+    "sources": [
+      "build/main/**/*.js"
+    ]
   },
   "config": {
     "commitizen": {
@@ -108,6 +112,8 @@
   },
   "nyc": {
     "extends": "@istanbuljs/nyc-config-typescript",
-    "exclude": ["**/*.spec.js"]
+    "exclude": [
+      "**/*.spec.js"
+    ]
   }
 }
