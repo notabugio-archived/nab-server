@@ -452,10 +452,10 @@
     sha.js "^2.4.11"
     ws "^7.1.2"
 
-"@notabug/nab-tabulator@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.3.tgz#14a6feb64b7e2eb47f135554fdd6898895ca4803"
-  integrity sha512-poR2we8wehOaNnhfT79PmkgzqOzVDxcGWyENz8Y6+KvCzpqgOHsb13xdQK02ZcAkTUVe646amg301pcNYLUhVw==
+"@notabug/nab-tabulator@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.4.tgz#cbb16151964306b139b50468ca870ef5eb05f645"
+  integrity sha512-ETkxoIsjVMskN3t+abEaOe8xWccGI9Pr9DLFkoecdvc1eyBIDf0d2WMYpRIEyFUiVx/hTScw/v3PjjtGNGab4g==
   dependencies:
     "@notabug/chaingun-sear" "^0.0.10"
     "@notabug/chaingun-socket-cluster-connector" "^0.0.2"
