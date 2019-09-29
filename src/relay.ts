@@ -5,7 +5,7 @@ import { WebSocketGraphConnector } from "@notabug/chaingun"
 const DEFAULT_OPTS = {
   socketCluster: {
     hostname: process.env.GUN_SC_HOST || "localhost",
-    port: process.env.GUN_SC_PORT || "4444",
+    port: parseInt(process.env.GUN_SC_PORT) || 4444,
     autoReconnect: true,
     autoReconnectOptions: {
       initialDelay: 1,
