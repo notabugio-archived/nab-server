@@ -1,0 +1,33 @@
+{
+  "apps": [
+    {
+      "name": "sockets",
+      "instances": 1,
+      "script": "./build/main/server.js"
+    },
+    {
+      "name": "validator",
+      "exec_mode": "cluster",
+      "instances": 1,
+      "script": "./build/main/validator.js"
+    },
+    {
+      "name": "storage",
+      "exec_mode": "cluster",
+      "instances": 1,
+      "script": "./build/main/storage.js"
+    },
+    {
+      "name": "tabulator",
+      "exec_mode": "cluster",
+      "instances": 1,
+      "script": "./build/main/tabulator.js"
+    },
+    {
+      "name": "indexer",
+      "exec_mode": "cluster",
+      "instances": 1,
+      "script": "./build/main/indexer.js"
+    }
+  ]
+}

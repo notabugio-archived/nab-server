@@ -4,8 +4,11 @@ test
 src/**.js
 .idea/*
 
+htdocs
 coverage
 .nyc_output
 *.log
+.env
+data
 
 package-lock.json

@@ -1,6 +1,6 @@
 {
   "name": "@notabug/nab-server",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "notabug.io SocketCluster server",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -10,6 +10,13 @@
   "keywords": [],
   "scripts": {
     "describe": "npm-scripts-info",
+    "run:sockets": "node -r dotenv/config build/main/server.js",
+    "run:validator": "node -r dotenv/config build/main/validator.js",
+    "run:storage": "node -r dotenv/config build/main/storage.js",
+    "run:tabulator": "node -r dotenv/config build/main/tabulator.js",
+    "run:indexer": "node -r dotenv/config build/main/indexer.js",
+    "run:relay": "node -r dotenv/config build/main/relay.js",
+    "start": "pm2 start everything.pm2.json",
     "build": "run-s clean && run-p build:*",
     "build:main": "tsc -p tsconfig.json",
     "build:module": "tsc -p tsconfig.module.json",
@@ -51,7 +58,21 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "sha.js": "^2.4.11"
+    "@notabug/chaingun": "^0.0.12",
+    "@notabug/gun-socketcluster-worker": "^0.0.4",
+    "@notabug/nab-indexer": "^0.0.1",
+    "@notabug/nab-lmdb-storage": "^0.0.2",
+    "@notabug/nab-tabulator": "^0.0.1",
+    "@notabug/nab-wire-validation": "^0.0.2",
+    "compression": "^1.7.4",
+    "dotenv": "^8.1.0",
+    "express-history-api-fallback": "^2.2.1",
+    "minimist": "^1.2.0",
+    "pm2": "^3.5.1",
+    "sc-hot-reboot": "^1.0.0",
+    "scc-broker-client": "^6.1.0",
+    "socketcluster": "^14.4.1",
+    "ws": "^7.1.2"
   },
   "devDependencies": {
     "@bitjson/npm-scripts-info": "^1.0.0",
@@ -74,12 +95,8 @@
   },
   "ava": {
     "failFast": true,
-    "files": [
-      "build/main/**/*.spec.js"
-    ],
-    "sources": [
-      "build/main/**/*.js"
-    ]
+    "files": ["build/main/**/*.spec.js"],
+    "sources": ["build/main/**/*.js"]
   },
   "config": {
     "commitizen": {
@@ -91,8 +108,6 @@
   },
   "nyc": {
     "extends": "@istanbuljs/nyc-config-typescript",
-    "exclude": [
-      "**/*.spec.js"
-    ]
+    "exclude": ["**/*.spec.js"]
   }
 }
