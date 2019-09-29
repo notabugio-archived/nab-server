@@ -472,11 +472,12 @@
     "@notabug/peer" "^0.36.0"
     dotenv "^8.1.0"
 
-"@notabug/nab-wire-validation@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-wire-validation/-/nab-wire-validation-0.0.3.tgz#f8b38fc33d3a57d7c7db10f0458f455e14aca178"
-  integrity sha512-YkpqmymGEbqKDDhx3jxhlLaQhB78vP8YQRV2HONT/JDMSXgWl4WkLB4RIVBO70eKrmi4sD4EuT29+t527pUUVA==
+"@notabug/nab-wire-validation@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-wire-validation/-/nab-wire-validation-0.0.4.tgz#0af0bb55306588738d1b382594ef7f9cda0662a1"
+  integrity sha512-X+HbEKC2WUG3WvYME+toWKhTd21zRFmgTSJwSqmLtFlgBk0Hp0D5yv3RMqSZ6l4xwINzUBrCv6QA01yv277N7Q==
   dependencies:
+    "@notabug/chaingun" "^0.0.14"
     "@notabug/gun-sear" "^0.0.15"
     "@notabug/gun-suppressor-sear" "^0.3.1"
     "@notabug/peer" "^0.36.0"
