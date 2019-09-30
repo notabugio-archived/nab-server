@@ -332,13 +332,13 @@
     "@notabug/chaingun" "^0.0.11"
     node-lmdb "^0.7.0"
 
-"@notabug/chaingun-sear@^0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@notabug/chaingun-sear/-/chaingun-sear-0.0.11.tgz#5e0517ae08d226ee6dbe137a3fb7a38abdc3717b"
-  integrity sha512-RZ9XbthlvgIVH8c2dmiWMY2PZJjBUr0D4AAyB1/jG7Y0BURl7Uut8WA2emVzXu/cIMWh6FAAkcCxmWWxhq2mBQ==
+"@notabug/chaingun-sear@^0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@notabug/chaingun-sear/-/chaingun-sear-0.0.12.tgz#89707edb7c7e90eac9b145ce37e4720f77f5687b"
+  integrity sha512-GTQEqDiSMfetMn9xF7rdumbaLirHI6vlIZFNM/ZmAiFEogJBfJ1/mHiZ4CbOjUmzUweOldOS5Z9Y+48tIY0cMQ==
   dependencies:
     "@notabug/chaingun" "^0.0.14"
-    "@notabug/gun-sear" "^0.0.16"
+    "@notabug/gun-sear" "^0.0.18"
 
 "@notabug/chaingun-socket-cluster-connector@^0.0.2":
   version "0.0.2"
@@ -399,10 +399,10 @@
     text-encoding "^0.7.0"
     window-or-global "^1.0.1"
 
-"@notabug/gun-sear@^0.0.16":
-  version "0.0.16"
-  resolved "https://registry.yarnpkg.com/@notabug/gun-sear/-/gun-sear-0.0.16.tgz#7196b9afdcfe07b78a5eacc9657414e4a4d4ec26"
-  integrity sha512-WK5Efq2kaRQXjLpGW85ZJh/cNxJWZihEifEGSvRHvAPXLvDaq+24FjgrvtaimXpeeeiW3dC6QJavfTU5SzVDqQ==
+"@notabug/gun-sear@^0.0.18":
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/@notabug/gun-sear/-/gun-sear-0.0.18.tgz#6b5cf38a59a1a5065d2740065a6098496f7a974a"
+  integrity sha512-JKICMtjmFcK6CVRQP90sJi1OeUpidijqxekTF8dpy5URLfYrRrAxMQpDxR/5KxBVFZ18L0VVtzEuMOG0LGhnlw==
   dependencies:
     "@peculiar/webcrypto" "^1.0.19"
     "@types/window-or-global" "^1.0.0"
@@ -438,12 +438,13 @@
     ramda "^0.26.1"
     route-parser "^0.0.5"
 
-"@notabug/nab-indexer@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.6.tgz#16ce956c96751d96f5215ec9e22444eef2f0fb73"
-  integrity sha512-OT9UipgDTp/+X97ryDuW4me3tW+dYeizhpPSeLSa3jtEmDYweXPoQnKgttA+I8kifukV5dXSFZGXIMCMhR6/Fw==
+"@notabug/nab-indexer@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.7.tgz#020f032ca3fefe9c0acdea7fdaa9df2d3ce4767e"
+  integrity sha512-zE9kCKFSbakiNEK6mwQT/f/DoEIG6521gYBKY+FyaZ+TJ6XIOvO5UO1SimG4ggqi9yGxCcrs1Rh9oBI+UXyzag==
   dependencies:
-    "@notabug/chaingun-sear" "^0.0.11"
+    "@notabug/chaingun-lmdb" "^0.0.5"
+    "@notabug/chaingun-sear" "^0.0.12"
     "@notabug/chaingun-socket-cluster-connector" "^0.0.2"
     "@notabug/peer" "^0.34.0"
     dotenv "^8.1.0"
@@ -462,12 +463,13 @@
     sha.js "^2.4.11"
     ws "^7.1.2"
 
-"@notabug/nab-tabulator@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.7.tgz#03987b8750087b2bfccd4fc72fde82f2ec3e0e9c"
-  integrity sha512-uDON5bgUKSyMExQN8ii+yEnmadtJmAyrDrYji1fu92NbV9QvbiSsa5U0ijoq4sj16CEnhvfoyhiO5hOXR1Nxrw==
+"@notabug/nab-tabulator@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.8.tgz#a6ab16940c8d86f624b2a4ccdbf98a0d2329795c"
+  integrity sha512-+i41g76SOvln56j/A9SE+fwlvuJ9R1uDcgWFJ1eGi39kvJqMV3UGU7mCGvJIKqXOsBgmqjuRwdmPKizRZWVxVg==
   dependencies:
-    "@notabug/chaingun-sear" "^0.0.11"
+    "@notabug/chaingun-lmdb" "^0.0.5"
+    "@notabug/chaingun-sear" "^0.0.12"
     "@notabug/chaingun-socket-cluster-connector" "^0.0.2"
     "@notabug/peer" "^0.36.0"
     dotenv "^8.1.0"
