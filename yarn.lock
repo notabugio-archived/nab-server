@@ -438,14 +438,15 @@
     ramda "^0.26.1"
     route-parser "^0.0.5"
 
-"@notabug/nab-indexer@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.7.tgz#020f032ca3fefe9c0acdea7fdaa9df2d3ce4767e"
-  integrity sha512-zE9kCKFSbakiNEK6mwQT/f/DoEIG6521gYBKY+FyaZ+TJ6XIOvO5UO1SimG4ggqi9yGxCcrs1Rh9oBI+UXyzag==
+"@notabug/nab-indexer@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.8.tgz#97826ac3bb2c3a6b5316a3f0e91a9bf1ced0a9b2"
+  integrity sha512-1faZuOtLaAFdv81KTiyGyaMTLUXOp0W010GxHXh5x3m9czBoTdWFOQPZyNQq9AuctOxGU43cNFZHMMpIJNNoEQ==
   dependencies:
     "@notabug/chaingun-lmdb" "^0.0.5"
     "@notabug/chaingun-sear" "^0.0.12"
     "@notabug/chaingun-socket-cluster-connector" "^0.0.2"
+    "@notabug/gun-sear" "^0.0.18"
     "@notabug/peer" "^0.34.0"
     dotenv "^8.1.0"
 
@@ -463,14 +464,15 @@
     sha.js "^2.4.11"
     ws "^7.1.2"
 
-"@notabug/nab-tabulator@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.8.tgz#a6ab16940c8d86f624b2a4ccdbf98a0d2329795c"
-  integrity sha512-+i41g76SOvln56j/A9SE+fwlvuJ9R1uDcgWFJ1eGi39kvJqMV3UGU7mCGvJIKqXOsBgmqjuRwdmPKizRZWVxVg==
+"@notabug/nab-tabulator@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.9.tgz#e1a9c88c709f9570ad449d691f04769ba4d04e15"
+  integrity sha512-5oK4TmJDRBV4LMz3d+D15UYsN/C0QjJGcydFAMqxrim7e0xl5Upr32fvK6iAKrgfn3ZtUHbsd9eDC7qZVY9+KA==
   dependencies:
     "@notabug/chaingun-lmdb" "^0.0.5"
     "@notabug/chaingun-sear" "^0.0.12"
     "@notabug/chaingun-socket-cluster-connector" "^0.0.2"
+    "@notabug/gun-sear" "^0.0.18"
     "@notabug/peer" "^0.36.0"
     dotenv "^8.1.0"
 
