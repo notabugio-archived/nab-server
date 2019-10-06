@@ -1,5 +1,5 @@
-require("dotenv").config()
+require('dotenv').config()
 
-import NabLmdbStorage from "@notabug/nab-lmdb-storage"
+import NabLmdbStorage from '@notabug/nab-lmdb-storage'
 
 new NabLmdbStorage()

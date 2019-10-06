@@ -402,16 +402,17 @@
     text-encoding "^0.7.0"
     window-or-global "^1.0.1"
 
-"@notabug/gun-socketcluster-worker@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@notabug/gun-socketcluster-worker/-/gun-socketcluster-worker-0.0.4.tgz#c4af38271c4809699425ca5a6d216e9d97f198a6"
-  integrity sha512-BgQ7Z35wkvwfZlGh4tIgthZ1A2JbXgzQUBlT/BuTzJ4+JKLnOp3MWMmu6qSjCr2t7F91hgsHInAAG0F1rGVSvg==
+"@notabug/gun-socketcluster-worker@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@notabug/gun-socketcluster-worker/-/gun-socketcluster-worker-0.0.5.tgz#85a46b96ecafec7c7b6101e0f355ab203a7bd732"
+  integrity sha512-lJy/BvJU6bboECVbkA85Xt50q9nkd004P7sWx0GovWUEBSHwt+hMEkIlzv15gOU6dXcEIXpK1jPdeBV7JyUyhQ==
   dependencies:
     "@notabug/gun-sear" "^0.0.14"
     express "^4.17.1"
     morgan "^1.9.1"
     sc-framework-health-check "^2.0.0"
     socketcluster "^14.4.1"
+    socketcluster-server "^14.6.0"
 
 "@notabug/gun-suppressor-sear@^0.3.1":
   version "0.3.1"

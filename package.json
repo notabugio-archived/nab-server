@@ -1,6 +1,6 @@
 {
   "name": "@notabug/nab-server",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "notabug.io SocketCluster server",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -59,7 +59,7 @@
   },
   "dependencies": {
     "@notabug/chaingun": "^0.0.14",
-    "@notabug/gun-socketcluster-worker": "^0.0.4",
+    "@notabug/gun-socketcluster-worker": "^0.0.5",
     "@notabug/nab-indexer": "^0.0.9",
     "@notabug/nab-lmdb-storage": "^0.0.4",
     "@notabug/nab-tabulator": "^0.0.10",
@@ -108,7 +108,8 @@
     }
   },
   "prettier": {
-    "singleQuote": true
+    "singleQuote": true,
+    "semi": false
   },
   "nyc": {
     "extends": "@istanbuljs/nyc-config-typescript",

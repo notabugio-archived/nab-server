@@ -6,15 +6,15 @@
   in the future, avoid changing the environment variable names below as
   each one has a specific meaning within the SC ecosystem.
 */
-require("dotenv").config()
-const path = require("path")
-const argv = require("minimist")(process.argv.slice(2))
-const scHotReboot = require("sc-hot-reboot")
+require('dotenv').config()
+const path = require('path')
+const argv = require('minimist')(process.argv.slice(2))
+const scHotReboot = require('sc-hot-reboot')
 
-const fsUtil = require("socketcluster/fsutil")
+const fsUtil = require('socketcluster/fsutil')
 const waitForFile = fsUtil.waitForFile
 
-const SocketCluster = require("socketcluster")
+const SocketCluster = require('socketcluster')
 
 const workerControllerPath =
   argv.wc || process.env.SOCKETCLUSTER_WORKER_CONTROLLER
@@ -22,17 +22,17 @@ const brokerControllerPath =
   argv.bc || process.env.SOCKETCLUSTER_BROKER_CONTROLLER
 const workerClusterControllerPath =
   argv.wcc || process.env.SOCKETCLUSTER_WORKERCLUSTER_CONTROLLER
-const environment = process.env.ENV || "dev"
+const environment = process.env.ENV || 'dev'
 
 const options: any = {
   workers: Number(argv.w) || Number(process.env.SOCKETCLUSTER_WORKERS) || 1,
   brokers: Number(argv.b) || Number(process.env.SOCKETCLUSTER_BROKERS) || 1,
   port: Number(argv.p) || Number(process.env.SOCKETCLUSTER_PORT) || 4444,
   // You can switch to 'sc-uws' for improved performance.
-  wsEngine: process.env.SOCKETCLUSTER_WS_ENGINE || "ws",
-  appName: argv.n || process.env.SOCKETCLUSTER_APP_NAME || "gunDB",
-  workerController: workerControllerPath || path.join(__dirname, "worker.js"),
-  brokerController: brokerControllerPath || path.join(__dirname, "broker.js"),
+  wsEngine: process.env.SOCKETCLUSTER_WS_ENGINE || 'ws',
+  appName: argv.n || process.env.SOCKETCLUSTER_APP_NAME || 'gunDB',
+  workerController: workerControllerPath || path.join(__dirname, 'worker.js'),
+  brokerController: brokerControllerPath || path.join(__dirname, 'broker.js'),
   workerClusterController: workerClusterControllerPath || null,
   socketChannelLimit:
     Number(process.env.SOCKETCLUSTER_SOCKET_CHANNEL_LIMIT) || 5000,
@@ -50,10 +50,10 @@ const options: any = {
     Number(process.env.SCC_STATE_SERVER_ACK_TIMEOUT) || null,
   clusterStateServerReconnectRandomness:
     Number(process.env.SCC_STATE_SERVER_RECONNECT_RANDOMNESS) || null,
-  crashWorkerOnError: argv["auto-reboot"] != false,
+  crashWorkerOnError: argv['auto-reboot'] != false,
   // If using nodemon, set this to true, and make sure that environment is 'dev'.
   killMasterOnSignal: false,
-  environment: environment
+  environment
 }
 
 const bootTimeout =
@@ -75,12 +75,12 @@ const start = function() {
 
   socketCluster.on(
     socketCluster.EVENT_WORKER_CLUSTER_START,
-    function(workerClusterInfo: { pid: any }) {
-      console.log("   >> WorkerCluster PID:", workerClusterInfo.pid)
+    function(workerClusterInfo: { readonly pid: any }) {
+      console.log('   >> WorkerCluster PID:', workerClusterInfo.pid)
     }
   )
 
-  if (socketCluster.options.environment === "dev") {
+  if (socketCluster.options.environment === 'dev') {
     // This will cause SC workers to reboot when code changes anywhere in the app directory.
     // The second options argument here is passed directly to chokidar.
     // See https://github.com/paulmillr/chokidar#api for details.
@@ -90,14 +90,14 @@ const start = function() {
     scHotReboot.attach(socketCluster, {
       cwd: __dirname,
       ignored: [
-        "public",
-        "node_modules",
-        "README.md",
-        "Dockerfile",
-        "server.js",
-        "broker.js",
+        'public',
+        'node_modules',
+        'README.md',
+        'Dockerfile',
+        'server.js',
+        'broker.js',
         /[\/\\]\./,
-        "*.log"
+        '*.log'
       ]
     })
   }
@@ -120,7 +120,7 @@ const startWhenFileIsReady = (filePath: string) => {
   )
 }
 
-const filesReadyPromises = [
+const filesReadyPromises: ReadonlyArray<any> = [
   startWhenFileIsReady(workerControllerPath),
   startWhenFileIsReady(brokerControllerPath),
   startWhenFileIsReady(workerClusterControllerPath)

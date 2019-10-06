@@ -1,10 +1,15 @@
-require("dotenv").config()
-const SCBroker = require("socketcluster/scbroker")
-const scClusterBrokerClient = require("scc-broker-client")
+// tslint:disable: no-var-requires
+// tslint:disable: no-expression-statement
+require('dotenv').config()
+// tslint:disable-next-line: no-submodule-imports
+const SCBroker = require('socketcluster/scbroker')
+const scClusterBrokerClient = require('scc-broker-client')
 
+// tslint:disable-next-line: no-class
 class Broker extends SCBroker {
-  run() {
-    console.log("   >> Broker PID:", process.pid)
+  public run(): void {
+    // tslint:disable-next-line: no-console
+    console.log('   >> Broker PID:', process.pid)
 
     /*
       If either `SCC_STATE_SERVER_HOST='123.45.67.89' node server.js` environment variable is set,
@@ -15,14 +20,14 @@ class Broker extends SCBroker {
     */
     if (this.options.clusterStateServerHost) {
       scClusterBrokerClient.attach(this, {
-        stateServerHost: this.options.clusterStateServerHost,
-        stateServerPort: this.options.clusterStateServerPort,
-        mappingEngine: this.options.clusterMappingEngine,
-        clientPoolSize: this.options.clusterClientPoolSize,
         authKey: this.options.clusterAuthKey,
+        clientPoolSize: this.options.clusterClientPoolSize,
+        mappingEngine: this.options.clusterMappingEngine,
+        stateServerAckTimeout: this.options.clusterStateServerAckTimeout,
         stateServerConnectTimeout: this.options
           .clusterStateServerConnectTimeout,
-        stateServerAckTimeout: this.options.clusterStateServerAckTimeout,
+        stateServerHost: this.options.clusterStateServerHost,
+        stateServerPort: this.options.clusterStateServerPort,
         stateServerReconnectRandomness: this.options
           .clusterStateServerReconnectRandomness
       })
@@ -30,4 +35,5 @@ class Broker extends SCBroker {
   }
 }
 
+// tslint:disable-next-line: no-unused-expression
 new Broker()
