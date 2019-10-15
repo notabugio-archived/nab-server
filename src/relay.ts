@@ -5,12 +5,6 @@ import socketCluster from 'socketcluster-client'
 const DEFAULT_OPTS = {
   socketCluster: {
     autoReconnect: true,
-    autoReconnectOptions: {
-      initialDelay: 1,
-      maxDelay: 5000,
-      randomness: 100
-    },
-
     hostname: process.env.GUN_SC_HOST || 'localhost',
     port: parseInt(process.env.GUN_SC_PORT, 10) || 4444
   },
