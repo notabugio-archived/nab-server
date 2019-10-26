@@ -1,6 +1,6 @@
 // tslint:disable-next-line: no-var-requires
 require('dotenv').config()
-import GunSocketClusterWorker from '@notabug/gun-socketcluster-worker'
+import GunSocketClusterWorker from '@chaingun/socketcluster-worker'
 import compression from 'compression'
 import express from 'express'
 import fallback from 'express-history-api-fallback'

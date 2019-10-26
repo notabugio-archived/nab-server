@@ -6,15 +6,9 @@
       "script": "./build/main/server.js"
     },
     {
-      "name": "validator",
-      "exec_mode": "cluster",
-      "instances": 1,
-      "script": "./build/main/validator.js"
-    },
-    {
       "name": "storage",
       "exec_mode": "cluster",
-      "instances": 1,
+      "instances": 2,
       "script": "./build/main/storage.js"
     },
     {
