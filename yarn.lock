@@ -517,10 +517,10 @@
     gun "^0.2019.930"
     ws "^7.1.2"
 
-"@notabug/nab-tabulator@^0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.11.tgz#ece1e6516e023a93d7a34715f944c16f14645b78"
-  integrity sha512-TBaVgVWtFfQV2FIT3KiCn0FMN8WGi+CuMUQmIor+Z/bT48r62HG/2dXEOHnX1YUuU9P3UXVo6GM9riwF/bo0zw==
+"@notabug/nab-tabulator@^0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.12.tgz#6ccab8dcaf068b297541a8b90e22706505a58ee5"
+  integrity sha512-t7EwbzBKcuxufrEB+GJY6/p6QjD4rEF3tnFONbiT0NRMf6VQUXpwUXiDJ2pv8Jkg4c1kYl3FajQg2dmFOMZw2g==
   dependencies:
     "@notabug/chaingun-lmdb" "^0.0.6"
     "@notabug/chaingun-sear" "^0.0.19"
