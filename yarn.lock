@@ -487,10 +487,10 @@
     ramda "^0.26.1"
     route-parser "^0.0.5"
 
-"@notabug/nab-indexer@^0.0.12":
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.12.tgz#374f740d1dc751b9c35613b1542e621be0bbb890"
-  integrity sha512-T+x89WczBIL+MYl+w6JXmty240fTFdM0e3eIag4U6nWEA7zkw2kZbnGinyQ93ud2jaMLFgObyskTCCfJ8C+DCA==
+"@notabug/nab-indexer@^0.0.13":
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.13.tgz#6ed3e1528026fb16c4258648a3321cb2e14230b4"
+  integrity sha512-VUaZdRIJXSRVpFdWzc3Wp2Q+iGvNv43pJ+5zjNd8Q1YGsrXUQXyT55I9VHqFLkfgD7QWyfwy8yGIgA/KRe0Z2w==
   dependencies:
     "@notabug/chaingun-lmdb" "^0.0.6"
     "@notabug/chaingun-sear" "^0.0.19"
