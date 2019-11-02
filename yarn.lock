@@ -300,10 +300,10 @@
     "@chaingun/types" "^0.0.1"
     reconnecting-websocket "^4.2.0"
 
-"@chaingun/client@^0.0.20":
-  version "0.0.20"
-  resolved "https://registry.yarnpkg.com/@chaingun/client/-/client-0.0.20.tgz#33b2d68f0273808932a2ea63e39ca64d7f32e51f"
-  integrity sha512-0ustBvM42jX/6Varz0e647dTvfR2iSdt1R+ta/obR9dwm6/W5ZX4Nc0ifRhrkE/kyecNih6iWv5JLc6l+bZgjA==
+"@chaingun/client@^0.0.21":
+  version "0.0.21"
+  resolved "https://registry.yarnpkg.com/@chaingun/client/-/client-0.0.21.tgz#a6f995ce585d1f1254e3fed7e1a6b608aa9e198e"
+  integrity sha512-J+IQxTKLW0FlH3aZ7xb5rUeoX6g8QzbY0yubd1KPYQyH9yl14tNGCRr0JXV3XF6s7ecknsP052ztbuEC0qzTbQ==
   dependencies:
     "@chaingun/crdt" "^0.0.2"
     "@chaingun/types" "^0.0.3"
@@ -361,12 +361,12 @@
     "@chaingun/types" "^0.0.3"
     "@types/node" "^12.11.7"
 
-"@chaingun/sea-client@^0.0.21":
-  version "0.0.21"
-  resolved "https://registry.yarnpkg.com/@chaingun/sea-client/-/sea-client-0.0.21.tgz#bedd5a75fc55eae0ea9fbb3e52ea889564835fb6"
-  integrity sha512-9WPJ6wBp7aiy4+4w6bXwGI1r2ONzu2OpF0vIIJBYnOMejIqN7giqfQselKALU/BrS+GoW8Q0IrV22ewn/tOEVQ==
+"@chaingun/sea-client@^0.0.22":
+  version "0.0.22"
+  resolved "https://registry.yarnpkg.com/@chaingun/sea-client/-/sea-client-0.0.22.tgz#cad2e6c9dd7f01984bd24616e7367c80416e832a"
+  integrity sha512-ddjng3o2FhHdIaVnfkzWva+71rjW6uGf06s6b5Zdz69RDwxeNX6D+UDau6fPlke2v1gjILTdU80Q5sFAEfvJdg==
   dependencies:
-    "@chaingun/client" "^0.0.20"
+    "@chaingun/client" "^0.0.21"
     "@chaingun/sear" "^0.0.23"
 
 "@chaingun/sear@^0.0.23":
@@ -570,13 +570,13 @@
     gun "^0.2019.930"
     ws "^7.1.2"
 
-"@notabug/nab-tabulator@^0.0.14":
-  version "0.0.14"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.14.tgz#b4a40091936f3f8c921a26eba2139a7cd8427980"
-  integrity sha512-aVZEBtm5/Tjcs/Ti7cs4YN79WweW61SmeK+WjkYfzP7aLdpt25hwGoBZ2LpnJTQAS9LoK4Pg+eps3H+UinI6KA==
+"@notabug/nab-tabulator@^0.0.15":
+  version "0.0.15"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.15.tgz#b2c48751bbec2a405238106619c7933c39cfdb5b"
+  integrity sha512-RHYf8ACd14U+GYXF7PxxI5bfCoXn6ABUlK/cIwEkBHjJ9SPl25W7LriPFBYYUbqoc5K9t0nihRi+P8VIYjbfSg==
   dependencies:
     "@chaingun/node-adapters" "^0.0.3"
-    "@chaingun/sea-client" "^0.0.21"
+    "@chaingun/sea-client" "^0.0.22"
     "@chaingun/sear" "^0.0.23"
     "@chaingun/socketcluster-connector" "^0.0.4"
     "@notabug/peer" "^0.36.0"
