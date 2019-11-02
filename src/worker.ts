@@ -21,7 +21,7 @@ staticMedia.use(express.static(root, { index: false }))
 const dataRe = /things\/.*\/data/
 
 class NotabugWorker extends GunSocketClusterWorker {
-  public setupExpress() {
+  public setupExpress(): Express.Application {
     const app = super.setupExpress()
     app.use(compression())
     app.use(staticMedia)
@@ -37,6 +37,21 @@ class NotabugWorker extends GunSocketClusterWorker {
       this.scServer.MIDDLEWARE_PUBLISH_IN,
       this.throttleMiddleware.bind(this)
     )
+  }
+
+  protected publishInMiddleware(
+    req: any,
+    next: (arg0?: Error | boolean) => void
+  ): void {
+    const fn = super.publishInMiddleware.bind(this)
+
+    this.throttleMiddleware(req, err => {
+      if (err) {
+        next(err)
+      } else {
+        fn(req, next)
+      }
+    })
   }
 
   protected throttleMiddleware(req: any, next: (arg0?: Error) => void): void {
