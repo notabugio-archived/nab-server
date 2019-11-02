@@ -326,10 +326,10 @@
     "@chaingun/types" "^0.0.3"
     node-lmdb "^0.7.0"
 
-"@chaingun/node-adapters@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@chaingun/node-adapters/-/node-adapters-0.0.2.tgz#a56d023fa8a9a94a6dc9a803338d16a45c659835"
-  integrity sha512-PgpX7ty7Ra72GAJ1KcFF2zedtjea/8i6SwFPd3ECpJ5rnOXDL5Dj3GU2lapSZ6at5dTHWKEGKIWjnu9gmAgs8Q==
+"@chaingun/node-adapters@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@chaingun/node-adapters/-/node-adapters-0.0.3.tgz#4fbded6ff64fec80d6be18c14585aa917f69ae3d"
+  integrity sha512-TyOa80DP4oVpBHudlqhwbaMHNmQJD295v/oyor9FXt6OkJpDpOpTNpzdSQkMsxwilYHYMbpXr0WQFvQEPjQB5w==
   dependencies:
     "@chaingun/http-adapter" "^0.3.0"
     "@chaingun/lmdb-adapter" "^0.0.7"
@@ -347,12 +347,12 @@
     text-encoding "^0.7.0"
     window-or-global "^1.0.1"
 
-"@chaingun/socketcluster-worker@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-worker/-/socketcluster-worker-0.2.0.tgz#7ce50fa726b7aa52e022abb0eaf017b794f7abfc"
-  integrity sha512-18IHZd7QQXIiyELux2Y9q/yf0jGm90XzwJBJTWFgsFFwXpJEMqGgm/EDVpDUcQFvpthmPlcPz3uoIJuI8+6mvQ==
+"@chaingun/socketcluster-worker@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-worker/-/socketcluster-worker-0.2.1.tgz#6b82ce4e8f4a16b41e586b4bf22a2955f5d33a61"
+  integrity sha512-Pm9bxgYJYDqKPJuparmBRFQD676yNkAiYlTnnLrKytFfMq0I49UmidReZWn6WW3MhePtT8v3B3tlhVaAASLlyg==
   dependencies:
-    "@chaingun/node-adapters" "^0.0.2"
+    "@chaingun/node-adapters" "^0.0.3"
     "@chaingun/sear" "^0.0.23"
     "@chaingun/types" "^0.0.3"
     express "^4.17.1"
