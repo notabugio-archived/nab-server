@@ -21,7 +21,7 @@ staticMedia.use(express.static(root, { index: false }))
 const dataRe = /things\/.*\/data/
 
 class NotabugWorker extends GunSocketClusterWorker {
-  public setupExpress(): Express.Application {
+  public setupExpress(): any {
     const app = super.setupExpress()
     app.use(compression())
     app.use(staticMedia)
