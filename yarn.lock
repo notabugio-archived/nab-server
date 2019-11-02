@@ -291,12 +291,37 @@
     typedoc-default-themes "^0.6.0-0"
     typescript "3.5.x"
 
+"@chaingun/client@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@chaingun/client/-/client-0.0.19.tgz#da2f2b02ff099e5888e3249d88000be0d2c5b043"
+  integrity sha512-4Oc4Xdt2mCgaJSYJBOjzICgb2As3pSAtQYAYBXdUyi1m/56g+14fc144sHo4vCBSbaIvr9bryTUaCbQFhwA7pg==
+  dependencies:
+    "@chaingun/crdt" "^0.0.1"
+    "@chaingun/types" "^0.0.1"
+    reconnecting-websocket "^4.2.0"
+
+"@chaingun/client@^0.0.20":
+  version "0.0.20"
+  resolved "https://registry.yarnpkg.com/@chaingun/client/-/client-0.0.20.tgz#33b2d68f0273808932a2ea63e39ca64d7f32e51f"
+  integrity sha512-0ustBvM42jX/6Varz0e647dTvfR2iSdt1R+ta/obR9dwm6/W5ZX4Nc0ifRhrkE/kyecNih6iWv5JLc6l+bZgjA==
+  dependencies:
+    "@chaingun/crdt" "^0.0.2"
+    "@chaingun/types" "^0.0.3"
+    reconnecting-websocket "^4.2.0"
+
 "@chaingun/crdt@^0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@chaingun/crdt/-/crdt-0.0.1.tgz#a94ebed24c93d50fe66526fc36c2c9764dc55691"
   integrity sha512-L9QejsXu7mDgMRNZxaIC7O3i8DN2w2mj7k2vhYgv0MKq7b3cuCk7bF5J4mBMETnN85r+RRZXI80R+7Aga99Mwg==
   dependencies:
     "@chaingun/types" "^0.0.1"
+
+"@chaingun/crdt@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@chaingun/crdt/-/crdt-0.0.2.tgz#9d62c703e81c95e3e347c078352284707c0ff1bd"
+  integrity sha512-JggscTfwsubnYamCTFI+rgCLKBrlv3NVBeymPdw0fpjVgCsDf9FFJDzYrsEl7lLUXIAZ+GG0pDki0DW2DsOx6Q==
+  dependencies:
+    "@chaingun/types" "^0.0.3"
 
 "@chaingun/http-adapter@^0.3.0":
   version "0.3.0"
@@ -336,6 +361,14 @@
     "@chaingun/types" "^0.0.3"
     "@types/node" "^12.11.7"
 
+"@chaingun/sea-client@^0.0.21":
+  version "0.0.21"
+  resolved "https://registry.yarnpkg.com/@chaingun/sea-client/-/sea-client-0.0.21.tgz#bedd5a75fc55eae0ea9fbb3e52ea889564835fb6"
+  integrity sha512-9WPJ6wBp7aiy4+4w6bXwGI1r2ONzu2OpF0vIIJBYnOMejIqN7giqfQselKALU/BrS+GoW8Q0IrV22ewn/tOEVQ==
+  dependencies:
+    "@chaingun/client" "^0.0.20"
+    "@chaingun/sear" "^0.0.23"
+
 "@chaingun/sear@^0.0.23":
   version "0.0.23"
   resolved "https://registry.yarnpkg.com/@chaingun/sear/-/sear-0.0.23.tgz#a0b7bb8557ba0c6ecb7b650a09e4a741b22582f5"
@@ -346,6 +379,16 @@
     sha.js "^2.4.11"
     text-encoding "^0.7.0"
     window-or-global "^1.0.1"
+
+"@chaingun/socketcluster-connector@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-connector/-/socketcluster-connector-0.0.4.tgz#087c539178b4f596a96bcaa385385a96df094aac"
+  integrity sha512-lGTSgeglPr9n5Iy6Ze56hDUyqDZJ0/+Sayb/U20urnlI7V7CVclcPZ7EFhB8FdVpnaPv8M2tO8YvX3VwQgtJEw==
+  dependencies:
+    "@chaingun/client" "^0.0.19"
+    "@chaingun/sear" "^0.0.23"
+    "@types/socketcluster-client" "^13.0.3"
+    socketcluster-client "^14.3.1"
 
 "@chaingun/socketcluster-worker@^0.2.1":
   version "0.2.1"
@@ -527,15 +570,15 @@
     gun "^0.2019.930"
     ws "^7.1.2"
 
-"@notabug/nab-tabulator@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.13.tgz#68a922f29163dc04d99b180cfdc9a81a8e1c15f8"
-  integrity sha512-o2AxTkJx3UPeTNWH7hVai9gOXvAGYCZbKrLV7b0EOmElisOMEvNw4Wof0R5f9WZygJtLnP5UQPikG1P80N2aJw==
+"@notabug/nab-tabulator@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.14.tgz#b4a40091936f3f8c921a26eba2139a7cd8427980"
+  integrity sha512-aVZEBtm5/Tjcs/Ti7cs4YN79WweW61SmeK+WjkYfzP7aLdpt25hwGoBZ2LpnJTQAS9LoK4Pg+eps3H+UinI6KA==
   dependencies:
-    "@notabug/chaingun-lmdb" "^0.0.6"
-    "@notabug/chaingun-sear" "^0.0.19"
-    "@notabug/chaingun-socket-cluster-connector" "^0.0.3"
-    "@notabug/gun-sear" "^0.0.22"
+    "@chaingun/node-adapters" "^0.0.3"
+    "@chaingun/sea-client" "^0.0.21"
+    "@chaingun/sear" "^0.0.23"
+    "@chaingun/socketcluster-connector" "^0.0.4"
     "@notabug/peer" "^0.36.0"
     dotenv "^8.1.0"
 
