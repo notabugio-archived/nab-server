@@ -494,6 +494,14 @@
     ramda "^0.26.1"
     zalgo-promise "1.0.28"
 
+"@notabug/gun-scope@^0.10.2":
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/@notabug/gun-scope/-/gun-scope-0.10.2.tgz#cb00d2df4379c161c1b7efc78923f5dce1e59bc0"
+  integrity sha512-d2eZekyyGOUymc08t+13sbKUsBQARArDcrGK7jUVelTWCpoP8bHXf3jRsaSzd3ef22jx7tPYppjy05rNcKaFwA==
+  dependencies:
+    ramda "^0.26.1"
+    zalgo-promise "1.0.28"
+
 "@notabug/gun-sear@^0.0.14":
   version "0.0.14"
   resolved "https://registry.yarnpkg.com/@notabug/gun-sear/-/gun-sear-0.0.14.tgz#1e8f178c175b443b52379734f43794684f7db811"
@@ -532,16 +540,16 @@
     ramda "^0.26.1"
     route-parser "^0.0.5"
 
-"@notabug/nab-indexer@^0.0.15":
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.15.tgz#d389409683c6490fa9b8d38e7bde477c4b0bbec0"
-  integrity sha512-lB/ThvQGuSild8O0ry9rpBSKpkqvY85zcd77G3EO0+/mDuU25zFa4qTSrBaBt6qut/T8qcoPGXNSb9Xf1IvIOg==
+"@notabug/nab-indexer@^0.0.16":
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.16.tgz#a4e68811df017d89fb98b0faa77f31577e623f7e"
+  integrity sha512-Sfs16fWuVYLafcoHhxT47b/4nr4HJBUmbqFDUXpHI4awfqqMOUk/tyDRll7mtEM9zYYTina7cATXM9DbJnYTmg==
   dependencies:
     "@chaingun/node-adapters" "^0.0.3"
     "@chaingun/sea-client" "^0.0.22"
     "@chaingun/sear" "^0.0.23"
     "@chaingun/socketcluster-connector" "^0.0.4"
-    "@notabug/peer" "^0.36.2"
+    "@notabug/peer" "^0.36.3"
     dotenv "^8.1.0"
 
 "@notabug/nab-lmdb-storage@^0.1.0":
@@ -562,16 +570,16 @@
     gun "^0.2019.930"
     ws "^7.1.2"
 
-"@notabug/nab-tabulator@^0.0.15":
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.15.tgz#b2c48751bbec2a405238106619c7933c39cfdb5b"
-  integrity sha512-RHYf8ACd14U+GYXF7PxxI5bfCoXn6ABUlK/cIwEkBHjJ9SPl25W7LriPFBYYUbqoc5K9t0nihRi+P8VIYjbfSg==
+"@notabug/nab-tabulator@^0.0.16":
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.16.tgz#a49f07de277e39c4bed6200b0217fc600de1efb3"
+  integrity sha512-t2NFIQfITByhwfVVLMSVUNY6FjUvT4gp4Hb/ypHFmAlUJz3m/u7tAwK569F4JeOvDJbnxj3okc+hQ6tE5JM2Xw==
   dependencies:
     "@chaingun/node-adapters" "^0.0.3"
     "@chaingun/sea-client" "^0.0.22"
     "@chaingun/sear" "^0.0.23"
     "@chaingun/socketcluster-connector" "^0.0.4"
-    "@notabug/peer" "^0.36.0"
+    "@notabug/peer" "^0.36.3"
     dotenv "^8.1.0"
 
 "@notabug/nab-wire-validation@^0.0.5":
@@ -636,12 +644,12 @@
     uri-js "^4.2.2"
     zalgo-promise "1.0.28"
 
-"@notabug/peer@^0.36.2":
-  version "0.36.2"
-  resolved "https://registry.yarnpkg.com/@notabug/peer/-/peer-0.36.2.tgz#e9141793ecbf010a3629438aba521ae4606c8594"
-  integrity sha512-vFzlv55x1+qCKrJK4UZeMGvg71+7ONXu3sPCBNclbOELb/QANuxMZb3m+WYz9gS7sKXGijOoW6FpPYyjgljCBA==
+"@notabug/peer@^0.36.3":
+  version "0.36.3"
+  resolved "https://registry.yarnpkg.com/@notabug/peer/-/peer-0.36.3.tgz#fadcd891936341bc14b144f8dcc5ba5ba1bdf126"
+  integrity sha512-7UgBe5r3TJGxMYTcyXGce8ZJU9NEiA6rNiqYiYNhVYiCZlsj38ckNFU1SRMeK9B3mo91vtzglbMhukwlzukKwg==
   dependencies:
-    "@notabug/gun-scope" "^0.10.0"
+    "@notabug/gun-scope" "^0.10.2"
     argon2 "^0.21.0"
     fast-memoize "^2.5.1"
     object-hash "^1.3.1"
