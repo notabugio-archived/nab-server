@@ -532,10 +532,10 @@
     ramda "^0.26.1"
     route-parser "^0.0.5"
 
-"@notabug/nab-indexer@^0.0.14":
-  version "0.0.14"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.14.tgz#a0c946abfe740cd47211c04c7d8721322f274d09"
-  integrity sha512-ZBrpg43Pfo3K/wXJmsVjnVpEe2DUUTQ7raizoSbew15K3B+sHwMNT06vHoVZMQ1P2fORtptaYf6k3zafky7FTQ==
+"@notabug/nab-indexer@^0.0.15":
+  version "0.0.15"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.15.tgz#d389409683c6490fa9b8d38e7bde477c4b0bbec0"
+  integrity sha512-lB/ThvQGuSild8O0ry9rpBSKpkqvY85zcd77G3EO0+/mDuU25zFa4qTSrBaBt6qut/T8qcoPGXNSb9Xf1IvIOg==
   dependencies:
     "@chaingun/node-adapters" "^0.0.3"
     "@chaingun/sea-client" "^0.0.22"
