@@ -309,6 +309,15 @@
     "@chaingun/types" "^0.0.3"
     reconnecting-websocket "^4.2.0"
 
+"@chaingun/client@^0.0.23":
+  version "0.0.23"
+  resolved "https://registry.yarnpkg.com/@chaingun/client/-/client-0.0.23.tgz#abada8a8fbc9b86aeb54aa46a7bae697ab337b51"
+  integrity sha512-T49NRHHayeu8PoZEMr0tTiCYDqUDfrUbptMTc7wYehaUScDj4Ipn+/Yn654GxjAjzwN5mv6eHHtk5qtGVLzfQA==
+  dependencies:
+    "@chaingun/crdt" "^0.0.2"
+    "@chaingun/types" "^0.0.3"
+    reconnecting-websocket "^4.2.0"
+
 "@chaingun/crdt@^0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@chaingun/crdt/-/crdt-0.0.1.tgz#a94ebed24c93d50fe66526fc36c2c9764dc55691"
@@ -369,6 +378,14 @@
     "@chaingun/client" "^0.0.21"
     "@chaingun/sear" "^0.0.23"
 
+"@chaingun/sea-client@^0.0.23":
+  version "0.0.23"
+  resolved "https://registry.yarnpkg.com/@chaingun/sea-client/-/sea-client-0.0.23.tgz#0944099d9584c8ee52564569dd6cbf437fb40317"
+  integrity sha512-8z2fFL5WylUWMZGLHb0HfHSYSQwAih+dE8FOZT/eAqNiaeRWlu+3K5oozB3DsQYRl4tlCZZ6uawHa7TWTZ4FIw==
+  dependencies:
+    "@chaingun/client" "^0.0.23"
+    "@chaingun/sear" "^0.0.24"
+
 "@chaingun/sear@^0.0.23":
   version "0.0.23"
   resolved "https://registry.yarnpkg.com/@chaingun/sear/-/sear-0.0.23.tgz#a0b7bb8557ba0c6ecb7b650a09e4a741b22582f5"
@@ -390,16 +407,6 @@
     sha.js "^2.4.11"
     text-encoding "^0.7.0"
     window-or-global "^1.0.1"
-
-"@chaingun/socketcluster-connector@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-connector/-/socketcluster-connector-0.0.4.tgz#087c539178b4f596a96bcaa385385a96df094aac"
-  integrity sha512-lGTSgeglPr9n5Iy6Ze56hDUyqDZJ0/+Sayb/U20urnlI7V7CVclcPZ7EFhB8FdVpnaPv8M2tO8YvX3VwQgtJEw==
-  dependencies:
-    "@chaingun/client" "^0.0.19"
-    "@chaingun/sear" "^0.0.23"
-    "@types/socketcluster-client" "^13.0.3"
-    socketcluster-client "^14.3.1"
 
 "@chaingun/socketcluster-connector@^0.0.6":
   version "0.0.6"
@@ -561,15 +568,15 @@
     ramda "^0.26.1"
     route-parser "^0.0.5"
 
-"@notabug/nab-indexer@^0.0.16":
-  version "0.0.16"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.16.tgz#a4e68811df017d89fb98b0faa77f31577e623f7e"
-  integrity sha512-Sfs16fWuVYLafcoHhxT47b/4nr4HJBUmbqFDUXpHI4awfqqMOUk/tyDRll7mtEM9zYYTina7cATXM9DbJnYTmg==
+"@notabug/nab-indexer@^0.0.17":
+  version "0.0.17"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.17.tgz#9389adf4db4c5c74efb78227ff150e33309fe182"
+  integrity sha512-L3293nUVHPJ0tLA1vDpqt5GT9270HC7qd/xTG3OEBZzuOvdh9C44cK3+eiuapWoM+sUvbCfzXsmWkQYmXrDIYw==
   dependencies:
     "@chaingun/node-adapters" "^0.0.3"
-    "@chaingun/sea-client" "^0.0.22"
-    "@chaingun/sear" "^0.0.23"
-    "@chaingun/socketcluster-connector" "^0.0.4"
+    "@chaingun/sea-client" "^0.0.23"
+    "@chaingun/sear" "^0.0.24"
+    "@chaingun/socketcluster-connector" "^0.0.6"
     "@notabug/peer" "^0.36.3"
     dotenv "^8.1.0"
 
