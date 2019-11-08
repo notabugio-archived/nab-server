@@ -380,6 +380,17 @@
     text-encoding "^0.7.0"
     window-or-global "^1.0.1"
 
+"@chaingun/sear@^0.0.24":
+  version "0.0.24"
+  resolved "https://registry.yarnpkg.com/@chaingun/sear/-/sear-0.0.24.tgz#a9a1d09cf5990468fd216b0ae2b8f5e1242657b0"
+  integrity sha512-SV+kb9VkX7wxvmiOusU6bJcxx8lWb+OdHDOTuib3ILD+Mwm/Ks5sospSxLodu5uiXZszDCdMDgqCoGPkfxHObQ==
+  dependencies:
+    "@types/window-or-global" "^1.0.0"
+    isomorphic-webcrypto "^2.3.2"
+    sha.js "^2.4.11"
+    text-encoding "^0.7.0"
+    window-or-global "^1.0.1"
+
 "@chaingun/socketcluster-connector@^0.0.4":
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-connector/-/socketcluster-connector-0.0.4.tgz#087c539178b4f596a96bcaa385385a96df094aac"
@@ -387,6 +398,16 @@
   dependencies:
     "@chaingun/client" "^0.0.19"
     "@chaingun/sear" "^0.0.23"
+    "@types/socketcluster-client" "^13.0.3"
+    socketcluster-client "^14.3.1"
+
+"@chaingun/socketcluster-connector@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-connector/-/socketcluster-connector-0.0.6.tgz#e5e9feadc77975c4c812d95dbb212bd2a25f1000"
+  integrity sha512-+MIhuBU1QBob5Y7Ljd23SjFg9TJYMOv3n3441u36xsVMEQxHQhF5VKy/d8l+6lVMsMIJhW7/uHTU1OzIlNXChQ==
+  dependencies:
+    "@chaingun/client" "^0.0.19"
+    "@chaingun/sear" "^0.0.24"
     "@types/socketcluster-client" "^13.0.3"
     socketcluster-client "^14.3.1"
 
@@ -570,15 +591,15 @@
     gun "^0.2019.930"
     ws "^7.1.2"
 
-"@notabug/nab-tabulator@^0.0.16":
-  version "0.0.16"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.16.tgz#a49f07de277e39c4bed6200b0217fc600de1efb3"
-  integrity sha512-t2NFIQfITByhwfVVLMSVUNY6FjUvT4gp4Hb/ypHFmAlUJz3m/u7tAwK569F4JeOvDJbnxj3okc+hQ6tE5JM2Xw==
+"@notabug/nab-tabulator@^0.0.17":
+  version "0.0.17"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.17.tgz#bc2c7b115a89bb8ba97df5403d3c73c47baf1585"
+  integrity sha512-D7FnZKJ8mepfXMWXi4iEEMIe/cYWmhpLtVNehxkcP8WqOi4jStV4lFmpvo+z1qJd2CJObIlceRuMH/oMioRwcA==
   dependencies:
     "@chaingun/node-adapters" "^0.0.3"
     "@chaingun/sea-client" "^0.0.22"
-    "@chaingun/sear" "^0.0.23"
-    "@chaingun/socketcluster-connector" "^0.0.4"
+    "@chaingun/sear" "^0.0.24"
+    "@chaingun/socketcluster-connector" "^0.0.6"
     "@notabug/peer" "^0.36.3"
     dotenv "^8.1.0"
 
