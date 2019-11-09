@@ -341,6 +341,15 @@
     "@types/isomorphic-fetch" "^0.0.35"
     isomorphic-fetch "^2.2.1"
 
+"@chaingun/http-adapter@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@chaingun/http-adapter/-/http-adapter-0.4.0.tgz#b8beccbaedc4cc89d1114c78e810270de0278ede"
+  integrity sha512-sww0kQhss4HVhcYh2I28xweLjO1Xg4xN9hhk0moclPzpV2/+B8SH6DPe3FW32uhaGCrSro6M+rPsx+OYS/OFXw==
+  dependencies:
+    "@chaingun/types" "^0.0.3"
+    "@types/isomorphic-fetch" "^0.0.35"
+    isomorphic-fetch "^2.2.1"
+
 "@chaingun/http-server@^0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@chaingun/http-server/-/http-server-0.0.1.tgz#da8918774065d3233a73f4a9098826bcfc2fe7a4"
@@ -366,6 +375,16 @@
   integrity sha512-TyOa80DP4oVpBHudlqhwbaMHNmQJD295v/oyor9FXt6OkJpDpOpTNpzdSQkMsxwilYHYMbpXr0WQFvQEPjQB5w==
   dependencies:
     "@chaingun/http-adapter" "^0.3.0"
+    "@chaingun/lmdb-adapter" "^0.0.7"
+    "@chaingun/types" "^0.0.3"
+    "@types/node" "^12.11.7"
+
+"@chaingun/node-adapters@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@chaingun/node-adapters/-/node-adapters-0.0.4.tgz#dda5d5340da72b6abfe3ec4b54a80b16a00a2bc6"
+  integrity sha512-D9Lwl6dZG92rg7vEsEQb0BlBuRdp8sdHTXKeSdUJXQvPyUMiWnqJviRP+minBb390SsondzfVOGFDEkeJOWTQw==
+  dependencies:
+    "@chaingun/http-adapter" "^0.4.0"
     "@chaingun/lmdb-adapter" "^0.0.7"
     "@chaingun/types" "^0.0.3"
     "@types/node" "^12.11.7"
@@ -407,16 +426,6 @@
     sha.js "^2.4.11"
     text-encoding "^0.7.0"
     window-or-global "^1.0.1"
-
-"@chaingun/socketcluster-connector@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-connector/-/socketcluster-connector-0.0.6.tgz#e5e9feadc77975c4c812d95dbb212bd2a25f1000"
-  integrity sha512-+MIhuBU1QBob5Y7Ljd23SjFg9TJYMOv3n3441u36xsVMEQxHQhF5VKy/d8l+6lVMsMIJhW7/uHTU1OzIlNXChQ==
-  dependencies:
-    "@chaingun/client" "^0.0.19"
-    "@chaingun/sear" "^0.0.24"
-    "@types/socketcluster-client" "^13.0.3"
-    socketcluster-client "^14.3.1"
 
 "@chaingun/socketcluster-connector@^0.0.7":
   version "0.0.7"
@@ -609,15 +618,15 @@
     gun "^0.2019.930"
     ws "^7.1.2"
 
-"@notabug/nab-tabulator@^0.0.17":
-  version "0.0.17"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.17.tgz#bc2c7b115a89bb8ba97df5403d3c73c47baf1585"
-  integrity sha512-D7FnZKJ8mepfXMWXi4iEEMIe/cYWmhpLtVNehxkcP8WqOi4jStV4lFmpvo+z1qJd2CJObIlceRuMH/oMioRwcA==
+"@notabug/nab-tabulator@^0.0.18":
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.18.tgz#dccfb4ea1e6f4a23ec5add025ec7f2475d7b3969"
+  integrity sha512-7l/4FaVb9DpfnCG17pPT3jDmz45tbpWOxQD4XgxjMQnHRmLKV2hDh6l/eol5fI6u/uAhRZoEo1tEXCJwTwGLUQ==
   dependencies:
-    "@chaingun/node-adapters" "^0.0.3"
+    "@chaingun/node-adapters" "^0.0.4"
     "@chaingun/sea-client" "^0.0.22"
     "@chaingun/sear" "^0.0.24"
-    "@chaingun/socketcluster-connector" "^0.0.6"
+    "@chaingun/socketcluster-connector" "^0.0.7"
     "@notabug/peer" "^0.36.3"
     dotenv "^8.1.0"
 
