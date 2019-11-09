@@ -418,6 +418,17 @@
     "@types/socketcluster-client" "^13.0.3"
     socketcluster-client "^14.3.1"
 
+"@chaingun/socketcluster-connector@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-connector/-/socketcluster-connector-0.0.7.tgz#6f1cca5cc0b11d3a1940885235b7d2ebd9b9eb44"
+  integrity sha512-AfSDvXw768vOEkXx0ukpHY+/5sbYT3tRzJYPqiwlOzLomm2zrIKC7+57XkbUYnFPTf5BwXCL6MvwSSshOAvd0g==
+  dependencies:
+    "@chaingun/client" "^0.0.19"
+    "@chaingun/sear" "^0.0.24"
+    "@chaingun/types" "^0.0.3"
+    "@types/socketcluster-client" "^13.0.3"
+    socketcluster-client "^14.3.1"
+
 "@chaingun/socketcluster-worker@^0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-worker/-/socketcluster-worker-0.2.1.tgz#6b82ce4e8f4a16b41e586b4bf22a2955f5d33a61"
@@ -568,15 +579,15 @@
     ramda "^0.26.1"
     route-parser "^0.0.5"
 
-"@notabug/nab-indexer@^0.0.17":
-  version "0.0.17"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.17.tgz#9389adf4db4c5c74efb78227ff150e33309fe182"
-  integrity sha512-L3293nUVHPJ0tLA1vDpqt5GT9270HC7qd/xTG3OEBZzuOvdh9C44cK3+eiuapWoM+sUvbCfzXsmWkQYmXrDIYw==
+"@notabug/nab-indexer@^0.0.18":
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.18.tgz#e6333910ac7be9c8735b6bad774ec3c26ab42a2e"
+  integrity sha512-PxEnzHNYivjX9TjyNfUsJVoAoSrxLaazcgC5vV7j8rgpDyYNQWRJol+RONg1Mfr7532DNQ9mr2mTVwr3VvIn2g==
   dependencies:
     "@chaingun/node-adapters" "^0.0.3"
     "@chaingun/sea-client" "^0.0.23"
     "@chaingun/sear" "^0.0.24"
-    "@chaingun/socketcluster-connector" "^0.0.6"
+    "@chaingun/socketcluster-connector" "^0.0.7"
     "@notabug/peer" "^0.36.3"
     dotenv "^8.1.0"
 
