@@ -588,12 +588,12 @@
     ramda "^0.26.1"
     route-parser "^0.0.5"
 
-"@notabug/nab-indexer@^0.0.18":
-  version "0.0.18"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.18.tgz#e6333910ac7be9c8735b6bad774ec3c26ab42a2e"
-  integrity sha512-PxEnzHNYivjX9TjyNfUsJVoAoSrxLaazcgC5vV7j8rgpDyYNQWRJol+RONg1Mfr7532DNQ9mr2mTVwr3VvIn2g==
+"@notabug/nab-indexer@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.0.19.tgz#6d854e8d934a9cf51304358dc1056b29c49f524b"
+  integrity sha512-oCTNZjp9IyydgI6/6A8uW6cuv6MsYn8+qK1M/YRaUiVG5In6GV21jVwBA7Ag1WqmGOdqlNmyMNuXg20xNN3bLQ==
   dependencies:
-    "@chaingun/node-adapters" "^0.0.3"
+    "@chaingun/node-adapters" "^0.0.5"
     "@chaingun/sea-client" "^0.0.23"
     "@chaingun/sear" "^0.0.24"
     "@chaingun/socketcluster-connector" "^0.0.7"
