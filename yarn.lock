@@ -341,10 +341,10 @@
     "@types/isomorphic-fetch" "^0.0.35"
     isomorphic-fetch "^2.2.1"
 
-"@chaingun/http-adapter@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@chaingun/http-adapter/-/http-adapter-0.4.0.tgz#b8beccbaedc4cc89d1114c78e810270de0278ede"
-  integrity sha512-sww0kQhss4HVhcYh2I28xweLjO1Xg4xN9hhk0moclPzpV2/+B8SH6DPe3FW32uhaGCrSro6M+rPsx+OYS/OFXw==
+"@chaingun/http-adapter@^0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@chaingun/http-adapter/-/http-adapter-0.4.1.tgz#a12b5548d3d7225ff067bf888b95646e4ed0403a"
+  integrity sha512-VRAWZsfwoeJ+YswHgcFXgG5FHoRlJdoMiSxt1eIq2Cb3eMeracowzkftrGDC4OR0en07kZWfAz20TyOmVR1NeA==
   dependencies:
     "@chaingun/types" "^0.0.3"
     "@types/isomorphic-fetch" "^0.0.35"
@@ -379,12 +379,12 @@
     "@chaingun/types" "^0.0.3"
     "@types/node" "^12.11.7"
 
-"@chaingun/node-adapters@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@chaingun/node-adapters/-/node-adapters-0.0.4.tgz#dda5d5340da72b6abfe3ec4b54a80b16a00a2bc6"
-  integrity sha512-D9Lwl6dZG92rg7vEsEQb0BlBuRdp8sdHTXKeSdUJXQvPyUMiWnqJviRP+minBb390SsondzfVOGFDEkeJOWTQw==
+"@chaingun/node-adapters@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@chaingun/node-adapters/-/node-adapters-0.0.5.tgz#1af6d0774bd7963b777777bb3da85eb9b1fb3ca8"
+  integrity sha512-npaOsaqZaZi6/1+mQcT9OMlQelgjNJ+ZfJp/5qQIjKN8NuoTt0Lsdxp35W+QDAHO1FJIO3ku45ERzioh9wh3oQ==
   dependencies:
-    "@chaingun/http-adapter" "^0.4.0"
+    "@chaingun/http-adapter" "^0.4.1"
     "@chaingun/lmdb-adapter" "^0.0.7"
     "@chaingun/types" "^0.0.3"
     "@types/node" "^12.11.7"
@@ -618,12 +618,12 @@
     gun "^0.2019.930"
     ws "^7.1.2"
 
-"@notabug/nab-tabulator@^0.0.18":
-  version "0.0.18"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.18.tgz#dccfb4ea1e6f4a23ec5add025ec7f2475d7b3969"
-  integrity sha512-7l/4FaVb9DpfnCG17pPT3jDmz45tbpWOxQD4XgxjMQnHRmLKV2hDh6l/eol5fI6u/uAhRZoEo1tEXCJwTwGLUQ==
+"@notabug/nab-tabulator@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.0.19.tgz#7a334b450894230f54538bae4ddc48a2efb962f6"
+  integrity sha512-cMOOD4neEP9VhbLNDb5t87fhlks+LFwtAiQNwdu9GkrCXRYctnqQyEmPX23U1DoHvk+5/QJAaqlPt5sALFRXkg==
   dependencies:
-    "@chaingun/node-adapters" "^0.0.4"
+    "@chaingun/node-adapters" "^0.0.5"
     "@chaingun/sea-client" "^0.0.22"
     "@chaingun/sear" "^0.0.24"
     "@chaingun/socketcluster-connector" "^0.0.7"
