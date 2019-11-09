@@ -1,6 +1,6 @@
 {
   "name": "@notabug/nab-server",
-  "version": "0.4.7",
+  "version": "0.5.0",
   "description": "notabug.io SocketCluster server",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -57,7 +57,9 @@
     "node": ">=8.9"
   },
   "dependencies": {
+    "@chaingun/node-adapters": "^0.0.5",
     "@chaingun/socketcluster-worker": "^0.2.1",
+    "@chaingun/types": "^0.0.3",
     "@notabug/chaingun": "^0.0.14",
     "@notabug/nab-indexer": "^0.0.19",
     "@notabug/nab-lmdb-storage": "^0.1.0",
@@ -66,6 +68,7 @@
     "compression": "^1.7.4",
     "dotenv": "^8.1.0",
     "express-history-api-fallback": "^2.2.1",
+    "gun": "^0.2019.930",
     "minimist": "^1.2.0",
     "pm2": "^3.5.1",
     "rate-limiter-flexible": "^1.1.6",

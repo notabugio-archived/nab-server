@@ -1,11 +1,13 @@
 // tslint:disable-next-line: no-var-requires
 require('dotenv').config()
 import GunSocketClusterWorker from '@chaingun/socketcluster-worker'
+import { GunGraphAdapter } from '@chaingun/types'
 import compression from 'compression'
 import express from 'express'
 import fallback from 'express-history-api-fallback'
 import path from 'path'
 import { RateLimiterMemory } from 'rate-limiter-flexible'
+import { createAdapter } from './validation'
 
 const PERIOD = 60 * 30 // 30m
 
@@ -29,6 +31,10 @@ class NotabugWorker extends GunSocketClusterWorker {
     app.use(fallback('index.html', { root }))
 
     return app
+  }
+
+  protected setupAdapter(): GunGraphAdapter {
+    return createAdapter()
   }
 
   protected setupMiddleware(): void {
