@@ -438,11 +438,12 @@
     "@types/socketcluster-client" "^13.0.3"
     socketcluster-client "^14.3.1"
 
-"@chaingun/socketcluster-worker@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-worker/-/socketcluster-worker-0.2.1.tgz#6b82ce4e8f4a16b41e586b4bf22a2955f5d33a61"
-  integrity sha512-Pm9bxgYJYDqKPJuparmBRFQD676yNkAiYlTnnLrKytFfMq0I49UmidReZWn6WW3MhePtT8v3B3tlhVaAASLlyg==
+"@chaingun/socketcluster-worker@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-worker/-/socketcluster-worker-0.3.0.tgz#b2bb49924f55c1a8b58cbdbe7e3420870dde36de"
+  integrity sha512-k41B9VhGWafa+e5g7FGKqVqGFfcjNOuUHPnOzoQ2pnNOg9ExWAWOnO2OpGlIeZeo/WbqhHIGypax+HOsqoqZ1A==
   dependencies:
+    "@chaingun/http-server" "^0.0.1"
     "@chaingun/node-adapters" "^0.0.3"
     "@chaingun/sear" "^0.0.23"
     "@chaingun/types" "^0.0.3"
