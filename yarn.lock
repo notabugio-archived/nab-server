@@ -619,10 +619,10 @@
     gun "^0.2019.930"
     ws "^7.1.2"
 
-"@notabug/nab-tabulator@^0.2.6":
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.2.6.tgz#96a3c97336189b7ea2384adbb3319f896615cc63"
-  integrity sha512-umsjR+jmIOEuODDacPV6sJiFe0iJyV6nSbH7cixIi0n1LWl29qrf+128EIVxacds19hpa7ZDWmANrSgEpU40pg==
+"@notabug/nab-tabulator@^0.2.7":
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.2.7.tgz#ad99065a4f97756b4e7a2de4295365e734984f45"
+  integrity sha512-3waSg6ScHx9MY7GBXvk0yzWsObDmnTB9Is8jYQX1LbxDZVa6JBVAKI42+ur9UGPBpqotBSoab+yoUsT+YbKtkQ==
   dependencies:
     "@chaingun/node-adapters" "^0.0.5"
     "@chaingun/sea-client" "^0.0.22"
