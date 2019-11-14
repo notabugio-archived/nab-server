@@ -63,7 +63,7 @@
     "@notabug/chaingun": "^0.0.14",
     "@notabug/nab-indexer": "^0.1.0",
     "@notabug/nab-lmdb-storage": "^0.1.0",
-    "@notabug/nab-tabulator": "^0.2.4",
+    "@notabug/nab-tabulator": "^0.2.5",
     "@notabug/nab-wire-validation": "^0.0.6",
     "compression": "^1.7.4",
     "dotenv": "^8.1.0",
