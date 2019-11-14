@@ -619,17 +619,19 @@
     gun "^0.2019.930"
     ws "^7.1.2"
 
-"@notabug/nab-tabulator@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.1.0.tgz#970f3855c843313101052cd100f2885ffe071d85"
-  integrity sha512-4O+QIr1v+Yu64C1yBI67tw++XYepG5fhYPfyFBDD4RTxT5fJIIph7xJswUxriFx/rTEYqFWLELqOeMDidiTY+Q==
+"@notabug/nab-tabulator@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.2.1.tgz#b36627bd3533b5d83a3e51897dedb1331fd7655f"
+  integrity sha512-68D7jP99y2UkrwGZyY2Kh0i1gPcPXtDlcXuv0HpYrwoQ9MGHj54x2c06HBrRw/8puAp5G36SWQh6d20ddlVy7w==
   dependencies:
     "@chaingun/node-adapters" "^0.0.5"
     "@chaingun/sea-client" "^0.0.22"
     "@chaingun/sear" "^0.0.24"
     "@chaingun/socketcluster-connector" "^0.0.7"
+    "@chaingun/types" "^0.0.3"
     "@notabug/peer" "^0.36.3"
     dotenv "^8.1.0"
+    ramda "^0.26.1"
 
 "@notabug/nab-wire-validation@^0.0.6":
   version "0.0.6"
