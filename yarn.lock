@@ -581,16 +581,13 @@
     ramda "^0.26.1"
     route-parser "^0.0.5"
 
-"@notabug/nab-indexer@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.1.0.tgz#64721437b05b1803763aa1c639e24cd7d809e104"
-  integrity sha512-XsvQ+M5jdpnDoX8z+Wka1F+6UnZvqkD1oqQMcPPfXgttxkIDUknKDKN39mBjoQotEYwzwtfayF1/fzfHWlBAaA==
+"@notabug/nab-indexer@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.2.0.tgz#531d585486356bef3c8435679b7cbe0849575485"
+  integrity sha512-BKmOFirIR9ZK2R7KvPvla7dCbMURUXVoPT60kjZJxuutaL7HqxARGdtuOsDhe7G74LkYmB8rrOzTAWU4wIE2Xg==
   dependencies:
     "@chaingun/node-adapters" "^0.0.5"
-    "@chaingun/sea-client" "^0.0.23"
-    "@chaingun/sear" "^0.0.24"
-    "@chaingun/socketcluster-connector" "^0.0.7"
-    "@notabug/peer" "^0.36.3"
+    "@notabug/client" "^0.0.2"
     dotenv "^8.1.0"
 
 "@notabug/nab-lmdb-storage@^0.1.0":
