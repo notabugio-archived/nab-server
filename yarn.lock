@@ -300,10 +300,10 @@
     "@chaingun/types" "^0.0.1"
     reconnecting-websocket "^4.2.0"
 
-"@chaingun/client@^0.0.23":
-  version "0.0.23"
-  resolved "https://registry.yarnpkg.com/@chaingun/client/-/client-0.0.23.tgz#abada8a8fbc9b86aeb54aa46a7bae697ab337b51"
-  integrity sha512-T49NRHHayeu8PoZEMr0tTiCYDqUDfrUbptMTc7wYehaUScDj4Ipn+/Yn654GxjAjzwN5mv6eHHtk5qtGVLzfQA==
+"@chaingun/client@^0.0.24":
+  version "0.0.24"
+  resolved "https://registry.yarnpkg.com/@chaingun/client/-/client-0.0.24.tgz#4bb373daab8923a7d26dc24e63ab10c0e7fd331e"
+  integrity sha512-nWeUtpy+xTwU1aV7hz8QkuS7S4hB+ATFuAXen1kD9TyGAwW/s+KOjUMeeMUsU/4xkzTSM5O4sJGS/3BGb8FpFA==
   dependencies:
     "@chaingun/crdt" "^0.0.2"
     "@chaingun/types" "^0.0.3"
@@ -389,16 +389,6 @@
     "@chaingun/types" "^0.0.3"
     "@types/node" "^12.11.7"
 
-"@chaingun/node-adapters@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@chaingun/node-adapters/-/node-adapters-0.0.5.tgz#1af6d0774bd7963b777777bb3da85eb9b1fb3ca8"
-  integrity sha512-npaOsaqZaZi6/1+mQcT9OMlQelgjNJ+ZfJp/5qQIjKN8NuoTt0Lsdxp35W+QDAHO1FJIO3ku45ERzioh9wh3oQ==
-  dependencies:
-    "@chaingun/http-adapter" "^0.4.1"
-    "@chaingun/lmdb-adapter" "^0.0.7"
-    "@chaingun/types" "^0.0.3"
-    "@types/node" "^12.11.7"
-
 "@chaingun/node-adapters@^0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@chaingun/node-adapters/-/node-adapters-0.1.0.tgz#96214898fc035165dc9e79aa5607a39d82f5e0d6"
@@ -410,12 +400,12 @@
     "@chaingun/types" "^0.0.3"
     "@types/node" "^12.11.7"
 
-"@chaingun/sea-client@^0.0.23":
-  version "0.0.23"
-  resolved "https://registry.yarnpkg.com/@chaingun/sea-client/-/sea-client-0.0.23.tgz#0944099d9584c8ee52564569dd6cbf437fb40317"
-  integrity sha512-8z2fFL5WylUWMZGLHb0HfHSYSQwAih+dE8FOZT/eAqNiaeRWlu+3K5oozB3DsQYRl4tlCZZ6uawHa7TWTZ4FIw==
+"@chaingun/sea-client@^0.0.25":
+  version "0.0.25"
+  resolved "https://registry.yarnpkg.com/@chaingun/sea-client/-/sea-client-0.0.25.tgz#611c3b34d2af52c07beac7177498faee00034030"
+  integrity sha512-vpLM/bRfsG9r2uhU8Amm89h+Gq1tIbeAuBNg4RxILq0dEAsGiP1V1R3sxIvd+Mff1rWdZfZmBv2MFfCniiPU1g==
   dependencies:
-    "@chaingun/client" "^0.0.23"
+    "@chaingun/client" "^0.0.24"
     "@chaingun/sear" "^0.0.24"
 
 "@chaingun/sear@^0.0.23":
@@ -548,12 +538,12 @@
   dependencies:
     reconnecting-websocket "^4.2.0"
 
-"@notabug/client@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@notabug/client/-/client-0.0.2.tgz#b9e94c622db893a25d9e23d2268543d5751411a8"
-  integrity sha512-lQf0XTtt01ah0vPcawY2+MuZIUx1A8PFRPkL8TqyCxD+SnqyV3yJAA25MAnNuAE63gIVJPsquaKqr92Pl1onYw==
+"@notabug/client@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@notabug/client/-/client-0.0.3.tgz#68550c232686c8c4a698774a10584a79c17fdd7b"
+  integrity sha512-UDqUDsDoyobQQQPoksZfNSpth5+I2MZsuKMMJxbc9fkr6KaFEKpYWAz8W/mEZ05tZuMQdXYNNSptU7mcFGsHvw==
   dependencies:
-    "@chaingun/sea-client" "^0.0.23"
+    "@chaingun/sea-client" "^0.0.25"
     "@chaingun/socketcluster-connector" "^0.0.7"
     "@notabug/peer" "^0.37.0"
 
@@ -611,13 +601,13 @@
     ramda "^0.26.1"
     route-parser "^0.0.5"
 
-"@notabug/nab-indexer@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.2.0.tgz#531d585486356bef3c8435679b7cbe0849575485"
-  integrity sha512-BKmOFirIR9ZK2R7KvPvla7dCbMURUXVoPT60kjZJxuutaL7HqxARGdtuOsDhe7G74LkYmB8rrOzTAWU4wIE2Xg==
+"@notabug/nab-indexer@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.2.2.tgz#16be6fe01058ce299017552809b8c37e623e766b"
+  integrity sha512-4XhX//9SP+3OIgxgtGgaezXo0tbA+rYTshKt/1nRALOQwn0YdlFqBR2YmQDYCzde2GxdMhYVg5hDW81UUBVn3g==
   dependencies:
-    "@chaingun/node-adapters" "^0.0.5"
-    "@notabug/client" "^0.0.2"
+    "@chaingun/node-adapters" "^0.1.0"
+    "@notabug/client" "^0.0.3"
     dotenv "^8.1.0"
 
 "@notabug/nab-lmdb-storage@^0.2.0":
@@ -638,13 +628,13 @@
     gun "^0.2019.930"
     ws "^7.1.2"
 
-"@notabug/nab-tabulator@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.3.0.tgz#1fe6bcf84aaa3cbaf8ec47013cef1c0d0d44112d"
-  integrity sha512-4Aco6DSsB2Dh0IXRMZAleLtwYf1C1B3lPLdqKqJBZda/J1Wo3z3jGSMdlJyrXPhcPbVWsKJXq50DYfNRTSexSA==
+"@notabug/nab-tabulator@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.3.1.tgz#e56a5804ec668921922332e6dea863c4af1e0107"
+  integrity sha512-r78G+hD8s+QhEN78WfLQM1E6c7qmuVkAuOWthsdBZwWiAR04CZOmXjHq+YXSXjrMt8Qn3s09IY1UBotRuknghQ==
   dependencies:
-    "@chaingun/node-adapters" "^0.0.5"
-    "@notabug/client" "^0.0.2"
+    "@chaingun/node-adapters" "^0.1.0"
+    "@notabug/client" "^0.0.3"
     "@notabug/peer" "^0.36.3"
     dotenv "^8.1.0"
     ramda "^0.26.1"
