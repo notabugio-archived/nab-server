@@ -360,6 +360,25 @@
     "@chaingun/types" "^0.0.3"
     node-lmdb "^0.7.0"
 
+"@chaingun/lmdb-adapter@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@chaingun/lmdb-adapter/-/lmdb-adapter-0.0.8.tgz#bcd71173efd8a1bb36fa77929c35712567f81a15"
+  integrity sha512-FTsB45z242nw4qqUvsiLAvJ5nqncZYgZDuASfCQhh4PMbU+dsmsVpSqECsTTt+2WxygGVfJy1gjWl6ygJB6v0A==
+  dependencies:
+    "@chaingun/crdt" "^0.0.1"
+    "@chaingun/types" "^0.0.3"
+    node-lmdb "^0.7.0"
+
+"@chaingun/memory-adapter@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@chaingun/memory-adapter/-/memory-adapter-0.0.3.tgz#a1c824fb8c7f62843d05c137aa5c582bbee70739"
+  integrity sha512-lDpcb7spNtzN5YSMbCsWmicufktsm3U2bE3hANse2ifrCyWOcXhWm+e83Sms7rm3VHuw2q8ahVmtRttnnh0TnA==
+  dependencies:
+    "@chaingun/crdt" "^0.0.2"
+    "@chaingun/types" "^0.0.3"
+    "@types/ramda" "^0.26.34"
+    ramda "^0.26.1"
+
 "@chaingun/node-adapters@^0.0.3":
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/@chaingun/node-adapters/-/node-adapters-0.0.3.tgz#4fbded6ff64fec80d6be18c14585aa917f69ae3d"
@@ -377,6 +396,17 @@
   dependencies:
     "@chaingun/http-adapter" "^0.4.1"
     "@chaingun/lmdb-adapter" "^0.0.7"
+    "@chaingun/types" "^0.0.3"
+    "@types/node" "^12.11.7"
+
+"@chaingun/node-adapters@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@chaingun/node-adapters/-/node-adapters-0.1.0.tgz#96214898fc035165dc9e79aa5607a39d82f5e0d6"
+  integrity sha512-51jDiXSRNi1zesZzzbnxN3UPjRb7rjkCanYu7ucGslnFIVcw1xy0Jl+ToSXzOrHMy87H5xO1b12eZlligIFb6w==
+  dependencies:
+    "@chaingun/http-adapter" "^0.4.1"
+    "@chaingun/lmdb-adapter" "^0.0.8"
+    "@chaingun/memory-adapter" "^0.0.3"
     "@chaingun/types" "^0.0.3"
     "@types/node" "^12.11.7"
 
@@ -590,13 +620,13 @@
     "@notabug/client" "^0.0.2"
     dotenv "^8.1.0"
 
-"@notabug/nab-lmdb-storage@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-lmdb-storage/-/nab-lmdb-storage-0.1.0.tgz#a43531970b94545c269accdff6c4acee55aac989"
-  integrity sha512-cobZGGubyeGFTJhq3os/Vw9ZV61d0qHyn0fI0e7ZFwLW6A0Gkt6VI7lxXnFXyuWhIauBSWIFBjxf36NQWG//Eg==
+"@notabug/nab-lmdb-storage@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-lmdb-storage/-/nab-lmdb-storage-0.2.0.tgz#5638cb4015d992449c4bc7799439556311859185"
+  integrity sha512-38qYdowf7200njEqkBhcx6nMN/dCrfMNx0SN0Jsqmg0RW+xY9CpvWDtZgLZyHF4Y/sfHnOrsfpMOwtqSJz3Psw==
   dependencies:
     "@chaingun/http-server" "^0.0.1"
-    "@chaingun/lmdb-adapter" "^0.0.7"
+    "@chaingun/lmdb-adapter" "^0.0.8"
     "@chaingun/types" "^0.0.3"
     "@notabug/chaingun" "^0.0.18"
     "@notabug/chaingun-lmdb" "^0.0.6"
@@ -941,6 +971,13 @@
   version "12.12.5"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.5.tgz#66103d2eddc543d44a04394abb7be52506d7f290"
   integrity sha512-KEjODidV4XYUlJBF3XdjSH5FWoMCtO0utnhtdLf1AgeuZLOrRbvmU/gaRCVg7ZaQDjVf3l84egiY0mRNe5xE4A==
+
+"@types/ramda@^0.26.34":
+  version "0.26.36"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.26.36.tgz#094f495c04f8876f583597ae73dce7eac94fc6ba"
+  integrity sha512-uo22Nf32Cc3EURp9tYlFttY8MVQZ1zoVum+D+yQ2jm4IqQFxDtwCQlP/WMwbuj4ey5kw1rJ7v6OacDszfWiqLA==
+  dependencies:
+    ts-toolbelt "^4.10.7"
 
 "@types/range-parser@*":
   version "1.2.3"
@@ -7737,6 +7774,11 @@ trim-right@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
   integrity sha1-yy4SAwZ+DI3h9hQJS5/kVwTqYAM=
+
+ts-toolbelt@^4.10.7:
+  version "4.10.21"
+  resolved "https://registry.yarnpkg.com/ts-toolbelt/-/ts-toolbelt-4.10.21.tgz#b88797c82161c9d019c1f3cf940b56540766eb6e"
+  integrity sha512-89MjhFYWESgNoQVFZXmZL8o25cOg/7nlky2XyDEyXFMFj8SvjGPnvm1mcZSkKO+ipBHa5iforjAJ4ZScaBokUA==
 
 tslib@1.9.3:
   version "1.9.3"
