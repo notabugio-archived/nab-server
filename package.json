@@ -61,7 +61,7 @@
     "@chaingun/socketcluster-worker": "^0.3.1",
     "@chaingun/types": "^0.0.3",
     "@notabug/chaingun": "^0.0.14",
-    "@notabug/nab-indexer": "^0.3.0",
+    "@notabug/nab-indexer": "^0.3.1",
     "@notabug/nab-lmdb-storage": "^0.2.0",
     "@notabug/nab-tabulator": "^0.3.1",
     "@notabug/nab-wire-validation": "^0.0.6",
