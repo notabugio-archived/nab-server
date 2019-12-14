@@ -558,10 +558,10 @@
     ramda "^0.26.1"
     route-parser "^0.0.5"
 
-"@notabug/nab-indexer@^0.3.4":
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.3.4.tgz#e4261b90907a087882c13671b2905df6b626553f"
-  integrity sha512-sts4E7vOyySTdIBsn+x6Z3+0fkHm73QT5Ys/fqgME4UlndV8qd6E++RndN/KO8RnM7YgaYecEv9JIsdFFO5/HA==
+"@notabug/nab-indexer@^0.3.5":
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.3.5.tgz#f399be827d4270965f935ae90433f9cc851042e6"
+  integrity sha512-9THceZTf2Kp+u9bxm5MXHq86IMPnqdwgkjIDNUp5vhDow6BLsAW45pIah4F/1SHka0T5q3QanX89LHu9t0Ae2A==
   dependencies:
     "@chaingun/node-adapters" "^0.1.0"
     "@notabug/client" "^0.0.3"
