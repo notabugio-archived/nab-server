@@ -567,15 +567,15 @@
     "@notabug/client" "^0.0.3"
     dotenv "^8.1.0"
 
-"@notabug/nab-lmdb-storage@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-lmdb-storage/-/nab-lmdb-storage-0.3.1.tgz#9f41631fac65e34d11a9bda7f66fb73d4eeeae45"
-  integrity sha512-/R50WBfsbwSzVrw/TJRIBm/scu1RVAnNlAaDkVnZK/7bYReSzF9uOMT5UjZ42cznB1xdK+W4p032GdUAlPlWCg==
+"@notabug/nab-lmdb-storage@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-lmdb-storage/-/nab-lmdb-storage-0.3.2.tgz#aedd900a6f3fdd5bc7eaceb834f10264c1d58c2f"
+  integrity sha512-B8aKcu0QqQ9fuHVLXOLRCPAD1aaC/2Jgr5yO8ffc4iPOPOUNnWGb06htaiDdeXvHxr76fYScoDEh9Xsmk0EjEw==
   dependencies:
     "@chaingun/http-server" "^0.0.1"
     "@chaingun/lmdb-adapter" "^0.0.8"
     "@chaingun/types" "^0.0.3"
-    "@notabug/nab-wire-validation" "^0.0.8"
+    "@notabug/nab-wire-validation" "^0.0.9"
     dotenv "^8.1.0"
     gun "^0.2019.930"
 
@@ -590,15 +590,15 @@
     dotenv "^8.1.0"
     ramda "^0.26.1"
 
-"@notabug/nab-wire-validation@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-wire-validation/-/nab-wire-validation-0.0.8.tgz#e4a3f4b818cba3207b9c2f70a0242ef9ebc61046"
-  integrity sha512-KI5AOJ/k/inu6RvqL7mxOeraw6MjkmyxdYn+LoBaYxhTD9i5fj+opAULEFgKAWQg7bxOe6bEVxncOEd9N/ISNg==
+"@notabug/nab-wire-validation@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-wire-validation/-/nab-wire-validation-0.0.9.tgz#72f0dd3799a8648ca5dc351e68faff528041b5d6"
+  integrity sha512-1OloNjv7oGG+H4g7o2eaIVp7ZbFLeugzXjyDLtwocFSO1gp93gSVkiNBtoqinXDNJUhHOP0dL1RVC9O0NtbhpQ==
   dependencies:
     "@notabug/chaingun" "^0.0.18"
     "@notabug/gun-sear" "^0.0.22"
     "@notabug/gun-suppressor-sear" "^0.3.1"
-    "@notabug/peer" "^0.39.1"
+    "@notabug/peer" "^0.39.2"
     dotenv "^8.1.0"
     gun "^0.2019.915"
     object-hash "^1.3.1"
@@ -636,10 +636,10 @@
     uri-js "^4.2.2"
     zalgo-promise "1.0.28"
 
-"@notabug/peer@^0.39.1":
-  version "0.39.1"
-  resolved "https://registry.yarnpkg.com/@notabug/peer/-/peer-0.39.1.tgz#ed98862b926ae6c49d96440d5df0fe4321320ca5"
-  integrity sha512-SgeMf/jL/xKuVnfUElxx2uI6Tbx98dyIYTg7UPHisgE6jx32nYrhJJer+86ErnbrEfA8ejwoaqGfoNraWZ+EAw==
+"@notabug/peer@^0.39.2":
+  version "0.39.2"
+  resolved "https://registry.yarnpkg.com/@notabug/peer/-/peer-0.39.2.tgz#0d7eb773e7379698f3925ad2511e7fcdcd87fab8"
+  integrity sha512-sRyBeWvIYhHN0XWJL8WQgrOjcW7hrg+AFbXMmvEHU+15TpZsgmAo3ZaBTHr0Bfh4SxarnUuTyGJf6Fe3JyxsZw==
   dependencies:
     "@notabug/gun-scope" "^0.10.2"
     argon2 "^0.21.0"
