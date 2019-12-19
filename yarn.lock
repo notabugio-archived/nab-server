@@ -362,6 +362,15 @@
     "@chaingun/types" "^0.0.4"
     node-lmdb "^0.7.0"
 
+"@chaingun/lmdb-adapter@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@chaingun/lmdb-adapter/-/lmdb-adapter-0.0.11.tgz#7882753a269781ad41135b10b5dcb96041ec84ed"
+  integrity sha512-v7ck08iKYyZQGOumAOimbmzqNmlWzNQfoaP85YdNzu0qTboubrtF4snD4YxuqBzCJx0iebZC7OKy4L/+Z7P3XQ==
+  dependencies:
+    "@chaingun/crdt" "^0.0.1"
+    "@chaingun/types" "^0.0.4"
+    node-lmdb "^0.7.0"
+
 "@chaingun/lmdb-adapter@^0.0.8":
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/@chaingun/lmdb-adapter/-/lmdb-adapter-0.0.8.tgz#bcd71173efd8a1bb36fa77929c35712567f81a15"
@@ -399,6 +408,17 @@
   dependencies:
     "@chaingun/http-adapter" "^0.5.1"
     "@chaingun/lmdb-adapter" "^0.0.10"
+    "@chaingun/memory-adapter" "^0.0.3"
+    "@chaingun/types" "^0.0.3"
+    "@types/node" "^12.11.7"
+
+"@chaingun/node-adapters@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@chaingun/node-adapters/-/node-adapters-0.2.2.tgz#a28b719e7a46712374a4acf639ccfc8bf52c2d76"
+  integrity sha512-NA0qdtK0mcXTQ3pA4FT+2dOa6GJadpzY+WddJr4t7JIbAJY685d/T/9fox84LzaFOe3zkv1deJPVnYKnXifeuw==
+  dependencies:
+    "@chaingun/http-adapter" "^0.5.1"
+    "@chaingun/lmdb-adapter" "^0.0.11"
     "@chaingun/memory-adapter" "^0.0.3"
     "@chaingun/types" "^0.0.3"
     "@types/node" "^12.11.7"
@@ -628,13 +648,13 @@
     "@notabug/client" "^0.0.5"
     dotenv "^8.1.0"
 
-"@notabug/nab-lmdb-storage@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-lmdb-storage/-/nab-lmdb-storage-0.4.1.tgz#2683b1bcca79d3361f14ba0df2c54e352528e862"
-  integrity sha512-FuO03/Moo3JSI/xGEVN68dnkbv6QRTj0S3tMtydn57qQOEGZCslXqToWLk/x2hC4Blg0iyrfhYHQgTHBxDlc8Q==
+"@notabug/nab-lmdb-storage@^0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-lmdb-storage/-/nab-lmdb-storage-0.4.2.tgz#890444079832890b257a3ed80d41884a687a17d2"
+  integrity sha512-pxY87ZYkqjiO3nboqJ0E1oAC7zgkkLevvZxMo4BT1XRaXa3V3ftkUCLioDIF28WaUHWdBxh7RAA+ChC53LRvYQ==
   dependencies:
     "@chaingun/http-server" "^0.0.2"
-    "@chaingun/lmdb-adapter" "^0.0.10"
+    "@chaingun/lmdb-adapter" "^0.0.11"
     "@chaingun/types" "^0.0.3"
     "@notabug/nab-wire-validation" "^0.0.10"
     dotenv "^8.1.0"
