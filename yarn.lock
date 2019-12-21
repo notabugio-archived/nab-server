@@ -639,10 +639,10 @@
     ramda "^0.26.1"
     route-parser "^0.0.5"
 
-"@notabug/nab-indexer@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.4.0.tgz#72915cd348ceb78049a1ac8aaa739809a7156f5c"
-  integrity sha512-xQW1NA2uYQdnk3DTqZ1NxH5RTCJwFXuLS/IvtJR7QAuTeedEVrrdErAo6NtjjEMbEMeDbQIzvxH7KrodNpbMew==
+"@notabug/nab-indexer@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.5.0.tgz#ce6678c236edb2ea36473fd535fd7d1832e6ac37"
+  integrity sha512-PXTgnoR0XRp7weQPmI5QJ8kV98s3mirKc3pqpcrt9t5/PugGQaWIakLHlCHrvezdokqWln9hPvcUI4oK0ls+4g==
   dependencies:
     "@chaingun/node-adapters" "^0.1.0"
     "@notabug/client" "^0.0.5"
