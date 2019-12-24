@@ -1,6 +1,6 @@
 import { WebSocketGraphConnector } from '@notabug/chaingun'
 // tslint:disable-next-line: no-implicit-dependencies
-import socketCluster from 'socketcluster-client'
+import socketCluster, { SCClientSocket } from 'socketcluster-client'
 
 const DEFAULT_OPTS = {
   socketCluster: {
@@ -23,8 +23,8 @@ const DEFAULT_OPTS = {
 }
 
 export class NabRelay {
-  public readonly socket: any
-  public readonly remoteSocket: any
+  public readonly socket: SCClientSocket
+  public readonly remoteSocket: SCClientSocket
   public readonly webSocket: WebSocketGraphConnector
 
   constructor(options = DEFAULT_OPTS) {
@@ -39,14 +39,17 @@ export class NabRelay {
       // tslint:disable-next-line: no-console
       console.error('Remote SC Connection Error', err.stack, err)
     })
-    this.sendDiffs()
-    this.receiveData()
   }
 
   public sendDiffs(): NabRelay {
     const channel = this.socket.subscribe('gun/put/diff')
     channel.watch(msg => {
-      this.remoteSocket.publish('gun/put', msg)
+      this.remoteSocket.publish('gun/put', msg, err => {
+        if (err) {
+          // tslint:disable-next-line: no-console
+          console.warn('Error sending diffs', err, err.stack)
+        }
+      })
     })
 
     return this
@@ -62,4 +65,4 @@ export class NabRelay {
   }
 }
 
-new NabRelay().sendDiffs().receiveData()
+new NabRelay()./*sendDiffs().*/receiveData()

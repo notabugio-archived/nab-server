@@ -1,7 +1,7 @@
-import createBaseAdapter from '@chaingun/node-adapters'
 import { GunGraphAdapter, GunGraphData } from '@chaingun/types'
 import { Validation } from '@notabug/nab-wire-validation'
 import Gun from 'gun'
+import { createAdapter as createBaseAdapter } from './federation'
 
 const suppressor = Validation.createSuppressor(Gun)
 

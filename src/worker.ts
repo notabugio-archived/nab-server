@@ -3,6 +3,7 @@ require('dotenv').config()
 import GunSocketClusterWorker from '@chaingun/socketcluster-worker'
 import { GunGraphAdapter } from '@chaingun/types'
 import compression from 'compression'
+// tslint:disable-next-line: no-implicit-dependencies
 import express from 'express'
 import fallback from 'express-history-api-fallback'
 import path from 'path'
@@ -125,4 +126,5 @@ class NotabugWorker extends GunSocketClusterWorker {
   }
 }
 
+// tslint:disable-next-line: no-unused-expression
 new NotabugWorker()
