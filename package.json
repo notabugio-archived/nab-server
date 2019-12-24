@@ -1,6 +1,6 @@
 {
   "name": "@notabug/nab-server",
-  "version": "0.16.1",
+  "version": "0.17.0",
   "description": "notabug.io SocketCluster server",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -59,6 +59,7 @@
   "dependencies": {
     "@chaingun/federation-adapter": "^0.0.2",
     "@chaingun/http-adapter": "^0.5.1",
+    "@chaingun/http-server": "^0.0.2",
     "@chaingun/lmdb-adapter": "^0.0.11",
     "@chaingun/node-adapters": "^0.2.2",
     "@chaingun/socketcluster-worker": "^0.4.1",

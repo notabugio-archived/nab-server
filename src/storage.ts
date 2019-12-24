@@ -1,5 +1,7 @@
+// tslint:disable-next-line: no-var-requires
 require('dotenv').config()
-import { makeServer } from '@notabug/nab-lmdb-storage'
+import { createServer } from '@chaingun/http-server'
+import { createGraphAdapter } from '@chaingun/lmdb-adapter'
 
 const LMDB_PATH = process.env.GUN_LMDB_PATH || ''
 const LMDB_MAP_SIZE =
@@ -8,9 +10,12 @@ const LMDB_MAP_SIZE =
 const PORT = parseInt(process.env.GUN_HTTP_PORT || '', 10) || 5555
 const HOST = process.env.GUN_HTTP_HOST || '127.0.0.1'
 
-const server = makeServer({
-  mapSize: LMDB_MAP_SIZE,
-  path: LMDB_PATH
-})
+const server = createServer(
+  createGraphAdapter({
+    mapSize: LMDB_MAP_SIZE,
+    path: LMDB_PATH
+  })
+)
+
 // @ts-ignore
 server.listen(PORT, HOST)
