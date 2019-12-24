@@ -323,10 +323,10 @@
   dependencies:
     "@chaingun/types" "^0.0.3"
 
-"@chaingun/federation-adapter@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@chaingun/federation-adapter/-/federation-adapter-0.0.1.tgz#e50e23b1fe91d0744f30d2d97019938f49e549e6"
-  integrity sha512-iiFi1ABrOZyKS0juNiVJsJEiBrzvuwCNgwdV25pgQmdHeNkb04qAnwKtdsESC6ts8BrXELvCp6lVTbesFL5Kbg==
+"@chaingun/federation-adapter@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@chaingun/federation-adapter/-/federation-adapter-0.0.2.tgz#f43c6a9bea50454478edf54f83f7cdc337c24cbb"
+  integrity sha512-IFTjXVsBOcw5o+wyaE27L3zHBCzsU3Gdh0WUhmXuiopOuy1cEir6LE19MQs6wqMbtwVaeT7tCDk0zgqOvldsVQ==
   dependencies:
     "@chaingun/types" "^0.0.4"
 
