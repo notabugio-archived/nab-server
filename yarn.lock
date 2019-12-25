@@ -330,15 +330,6 @@
   dependencies:
     "@chaingun/types" "^0.0.4"
 
-"@chaingun/http-adapter@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@chaingun/http-adapter/-/http-adapter-0.4.1.tgz#a12b5548d3d7225ff067bf888b95646e4ed0403a"
-  integrity sha512-VRAWZsfwoeJ+YswHgcFXgG5FHoRlJdoMiSxt1eIq2Cb3eMeracowzkftrGDC4OR0en07kZWfAz20TyOmVR1NeA==
-  dependencies:
-    "@chaingun/types" "^0.0.3"
-    "@types/isomorphic-fetch" "^0.0.35"
-    isomorphic-fetch "^2.2.1"
-
 "@chaingun/http-adapter@^0.5.1":
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/@chaingun/http-adapter/-/http-adapter-0.5.1.tgz#6402c35f123a15287005888a36df4de08260c35c"
@@ -378,15 +369,6 @@
     "@chaingun/types" "^0.0.4"
     node-lmdb "^0.7.0"
 
-"@chaingun/lmdb-adapter@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@chaingun/lmdb-adapter/-/lmdb-adapter-0.0.8.tgz#bcd71173efd8a1bb36fa77929c35712567f81a15"
-  integrity sha512-FTsB45z242nw4qqUvsiLAvJ5nqncZYgZDuASfCQhh4PMbU+dsmsVpSqECsTTt+2WxygGVfJy1gjWl6ygJB6v0A==
-  dependencies:
-    "@chaingun/crdt" "^0.0.1"
-    "@chaingun/types" "^0.0.3"
-    node-lmdb "^0.7.0"
-
 "@chaingun/memory-adapter@^0.0.3":
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/@chaingun/memory-adapter/-/memory-adapter-0.0.3.tgz#a1c824fb8c7f62843d05c137aa5c582bbee70739"
@@ -396,17 +378,6 @@
     "@chaingun/types" "^0.0.3"
     "@types/ramda" "^0.26.34"
     ramda "^0.26.1"
-
-"@chaingun/node-adapters@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@chaingun/node-adapters/-/node-adapters-0.1.0.tgz#96214898fc035165dc9e79aa5607a39d82f5e0d6"
-  integrity sha512-51jDiXSRNi1zesZzzbnxN3UPjRb7rjkCanYu7ucGslnFIVcw1xy0Jl+ToSXzOrHMy87H5xO1b12eZlligIFb6w==
-  dependencies:
-    "@chaingun/http-adapter" "^0.4.1"
-    "@chaingun/lmdb-adapter" "^0.0.8"
-    "@chaingun/memory-adapter" "^0.0.3"
-    "@chaingun/types" "^0.0.3"
-    "@types/node" "^12.11.7"
 
 "@chaingun/node-adapters@^0.2.1":
   version "0.2.1"
@@ -640,12 +611,12 @@
     dotenv "^8.1.0"
     js-yaml "^3.13.1"
 
-"@notabug/nab-tabulator@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.5.0.tgz#0170db51865f8f40952a467a799f3edf8394eae2"
-  integrity sha512-a//ovM5bLIlPE2/Hj4ORIgt4TSvwVgjUEkLoqR/yhe3vJRBfPx4LE79v7q3F5ESHJAdv6THzKE+rEdCWoGv3xQ==
+"@notabug/nab-tabulator@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.5.1.tgz#7eaeb52370b0ae70f0081176f45849599a4cea1a"
+  integrity sha512-mpoUPpChfouPOS/ZefkgDAtaSR29d+LT2XCpf9SVukb8A4wgM8jxFSsV3OBLW5VWTQwJLZ50NKVut6bKCq51rw==
   dependencies:
-    "@chaingun/node-adapters" "^0.1.0"
+    "@chaingun/node-adapters" "^0.2.3"
     "@notabug/client" "^0.0.8"
     "@notabug/peer" "^0.36.3"
     dotenv "^8.1.0"
