@@ -108,7 +108,7 @@ class NotabugWorker extends GunSocketClusterWorker {
       }
     }
 
-    if (!contentLength) {
+    if (!contentLength || !req.socket.forwardedForAddress) {
       next()
       return
     }

@@ -1,4 +1,4 @@
-import { WebSocketGraphConnector } from '@notabug/chaingun'
+import { WebSocketGraphConnector } from "@notabug/client"
 // tslint:disable-next-line: no-implicit-dependencies
 import socketCluster, { SCClientSocket } from 'socketcluster-client'
 

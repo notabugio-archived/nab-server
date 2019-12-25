@@ -323,10 +323,10 @@
   dependencies:
     "@chaingun/types" "^0.0.3"
 
-"@chaingun/federation-adapter@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@chaingun/federation-adapter/-/federation-adapter-0.0.2.tgz#f43c6a9bea50454478edf54f83f7cdc337c24cbb"
-  integrity sha512-IFTjXVsBOcw5o+wyaE27L3zHBCzsU3Gdh0WUhmXuiopOuy1cEir6LE19MQs6wqMbtwVaeT7tCDk0zgqOvldsVQ==
+"@chaingun/federation-adapter@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@chaingun/federation-adapter/-/federation-adapter-0.0.4.tgz#08a36a498d8bd6f2a257793e38f9cd45c63423d3"
+  integrity sha512-fhWxcTI+ZCLSZcGwp2xEPBT8HqOBV/fdPoQHYQdFb3hWytGUIvQSGxJjO+HdaQ4iNaecMVh7szCxzLLJwS4ETA==
   dependencies:
     "@chaingun/types" "^0.0.4"
 
@@ -369,10 +369,10 @@
     "@chaingun/types" "^0.0.4"
     node-lmdb "^0.7.0"
 
-"@chaingun/lmdb-adapter@^0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@chaingun/lmdb-adapter/-/lmdb-adapter-0.0.11.tgz#7882753a269781ad41135b10b5dcb96041ec84ed"
-  integrity sha512-v7ck08iKYyZQGOumAOimbmzqNmlWzNQfoaP85YdNzu0qTboubrtF4snD4YxuqBzCJx0iebZC7OKy4L/+Z7P3XQ==
+"@chaingun/lmdb-adapter@^0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@chaingun/lmdb-adapter/-/lmdb-adapter-0.0.12.tgz#a840e3c407a5af46be7584145e40c097d5f54d2a"
+  integrity sha512-5CHaXG3O/SDHtQVPdGco5lfoURs12MmC7bBBTs5ytw+Kq2Nh/qVFhdT4nJVz7JF4zu/0LN02e2h41v1wggoYSg==
   dependencies:
     "@chaingun/crdt" "^0.0.1"
     "@chaingun/types" "^0.0.4"
@@ -419,13 +419,13 @@
     "@chaingun/types" "^0.0.3"
     "@types/node" "^12.11.7"
 
-"@chaingun/node-adapters@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@chaingun/node-adapters/-/node-adapters-0.2.2.tgz#a28b719e7a46712374a4acf639ccfc8bf52c2d76"
-  integrity sha512-NA0qdtK0mcXTQ3pA4FT+2dOa6GJadpzY+WddJr4t7JIbAJY685d/T/9fox84LzaFOe3zkv1deJPVnYKnXifeuw==
+"@chaingun/node-adapters@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@chaingun/node-adapters/-/node-adapters-0.2.3.tgz#b9163e0c01af08b0e0d4aae3ba7c863757dfaeee"
+  integrity sha512-12HKwIBECJUZnMEwXUe2cvFjcyKcphX/xGyEsoyjMLvNZZBcV4NfSCmFYr5AOvH7f9YizVGCSU6aGQpD79eb+w==
   dependencies:
     "@chaingun/http-adapter" "^0.5.1"
-    "@chaingun/lmdb-adapter" "^0.0.11"
+    "@chaingun/lmdb-adapter" "^0.0.12"
     "@chaingun/memory-adapter" "^0.0.3"
     "@chaingun/types" "^0.0.3"
     "@types/node" "^12.11.7"
@@ -442,17 +442,6 @@
   version "0.0.24"
   resolved "https://registry.yarnpkg.com/@chaingun/sear/-/sear-0.0.24.tgz#a9a1d09cf5990468fd216b0ae2b8f5e1242657b0"
   integrity sha512-SV+kb9VkX7wxvmiOusU6bJcxx8lWb+OdHDOTuib3ILD+Mwm/Ks5sospSxLodu5uiXZszDCdMDgqCoGPkfxHObQ==
-  dependencies:
-    "@types/window-or-global" "^1.0.0"
-    isomorphic-webcrypto "^2.3.2"
-    sha.js "^2.4.11"
-    text-encoding "^0.7.0"
-    window-or-global "^1.0.1"
-
-"@chaingun/sear@^0.0.25":
-  version "0.0.25"
-  resolved "https://registry.yarnpkg.com/@chaingun/sear/-/sear-0.0.25.tgz#e8472909022127a8b69f62933af05f0219869782"
-  integrity sha512-awpWLUsRNShnpFQrTZXIMqaJbUSbhWsKKOe+71z7VMYrS+7UHG7zrOoc/HamFbMK2k4uID+TysejifLL1j7BJw==
   dependencies:
     "@types/window-or-global" "^1.0.0"
     isomorphic-webcrypto "^2.3.2"
@@ -524,14 +513,14 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/nyc-config-typescript/-/nyc-config-typescript-0.1.3.tgz#944d15b3ebdb71f963a628daffaa25ade981bb86"
   integrity sha512-EzRFg92bRSD1W/zeuNkeGwph0nkWf+pP2l/lYW4/5hav7RjKKBN5kV1Ix7Tvi0CMu3pC4Wi/U7rNisiJMR3ORg==
 
-"@lingua-webca/chaingun@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@lingua-webca/chaingun/-/chaingun-0.0.4.tgz#910e177a388d76267b89f5545e36df18f5ddb333"
-  integrity sha512-2fBcDAjPJC0MvfOhzFW3ex4oWJ4+Ttu3FulLu4ZCLcymvmhpcNzlUXpKKkZCZB0232A+QnKmMi2O4uJ+DOUDPA==
+"@lingua-webca/chaingun@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@lingua-webca/chaingun/-/chaingun-0.0.5.tgz#997c399434a4921d164e00575ea9e046984e0422"
+  integrity sha512-xPYXslZR/Gslvb8RRUJMWbhyFn+32xV6+4s8izzc2VtVqV84WXNuyXiC75Lnm9b5OOvI39P6wCuZA7hHqNF7mQ==
   dependencies:
-    "@chaingun/http-adapter" "^0.4.1"
-    "@chaingun/sear" "^0.0.25"
-    "@chaingun/types" "^0.0.3"
+    "@chaingun/http-adapter" "^0.5.1"
+    "@chaingun/sear" "^0.0.26"
+    "@chaingun/types" "^0.0.4"
     "@lingua-webca/core" "^0.0.2"
     uri-js "^4.2.2"
 
@@ -576,13 +565,6 @@
     "@nodelib/fs.scandir" "2.1.2"
     fastq "^1.6.0"
 
-"@notabug/chaingun@^0.0.14":
-  version "0.0.14"
-  resolved "https://registry.yarnpkg.com/@notabug/chaingun/-/chaingun-0.0.14.tgz#eaa5e4a8549f900c3ba97b4e61748d2e91ec117e"
-  integrity sha512-urvNKu7P5rTm/tYbIJQw1w8FoFdhp/Cr63EeyrPaU495dc7Q5ZBj74bTqI0GEd0atIBI2AfWFxOka5ETUlK3+Q==
-  dependencies:
-    reconnecting-websocket "^4.2.0"
-
 "@notabug/chaingun@^0.0.18":
   version "0.0.18"
   resolved "https://registry.yarnpkg.com/@notabug/chaingun/-/chaingun-0.0.18.tgz#eb4bf0f527c5dabe06aeab9f95198608b9231b4f"
@@ -590,14 +572,16 @@
   dependencies:
     reconnecting-websocket "^4.2.0"
 
-"@notabug/client@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@notabug/client/-/client-0.0.5.tgz#845150ee82a302ba1cf5fe6aa69593a982763123"
-  integrity sha512-9/kWCrwQJ1WSasgABMepvk5E4R6pTfBU/gvK76OLUzA0J/2ncFQpjrkEhmxw71kkWtZ1Gx5q+pvpwhJE5qv4hg==
+"@notabug/client@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@notabug/client/-/client-0.0.8.tgz#1f1cc812d15708d05d907fd7962989892deaefdf"
+  integrity sha512-X89ijHchLbRDrJCNI9SMy7qqoE7osZ+7imX8zjbBBXqt2/3wz+N1xuOoAI3yGOHyVrNjZU0hCNUolvLjgg7Yiw==
   dependencies:
+    "@chaingun/federation-adapter" "^0.0.4"
+    "@chaingun/http-adapter" "^0.5.1"
     "@chaingun/sea-client" "^0.0.29"
     "@chaingun/socketcluster-connector" "^0.0.7"
-    "@lingua-webca/chaingun" "^0.0.4"
+    "@lingua-webca/chaingun" "^0.0.5"
     "@lingua-webca/core" "^0.0.3"
     "@notabug/peer" "^0.38.0"
     "@types/js-yaml" "^3.12.1"
@@ -646,36 +630,26 @@
     ramda "^0.26.1"
     route-parser "^0.0.5"
 
-"@notabug/nab-indexer@^0.5.0":
+"@notabug/nab-indexer@^0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.6.1.tgz#8435c14e3757dc7f11b1b1e83573dfa9f8f06409"
+  integrity sha512-lu+fF2IHln41tIPyuWE7iixi76KoRIzHIzCTpUn2664GjqKx4ZT83OHQzq37kVG/m8HYO4Sx6UsLPlgouUYmsA==
+  dependencies:
+    "@chaingun/node-adapters" "^0.2.3"
+    "@notabug/client" "^0.0.8"
+    dotenv "^8.1.0"
+    js-yaml "^3.13.1"
+
+"@notabug/nab-tabulator@^0.5.0":
   version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.5.0.tgz#ce6678c236edb2ea36473fd535fd7d1832e6ac37"
-  integrity sha512-PXTgnoR0XRp7weQPmI5QJ8kV98s3mirKc3pqpcrt9t5/PugGQaWIakLHlCHrvezdokqWln9hPvcUI4oK0ls+4g==
+  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.5.0.tgz#0170db51865f8f40952a467a799f3edf8394eae2"
+  integrity sha512-a//ovM5bLIlPE2/Hj4ORIgt4TSvwVgjUEkLoqR/yhe3vJRBfPx4LE79v7q3F5ESHJAdv6THzKE+rEdCWoGv3xQ==
   dependencies:
     "@chaingun/node-adapters" "^0.1.0"
-    "@notabug/client" "^0.0.5"
-    dotenv "^8.1.0"
-
-"@notabug/nab-lmdb-storage@^0.4.2":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-lmdb-storage/-/nab-lmdb-storage-0.4.2.tgz#890444079832890b257a3ed80d41884a687a17d2"
-  integrity sha512-pxY87ZYkqjiO3nboqJ0E1oAC7zgkkLevvZxMo4BT1XRaXa3V3ftkUCLioDIF28WaUHWdBxh7RAA+ChC53LRvYQ==
-  dependencies:
-    "@chaingun/http-server" "^0.0.2"
-    "@chaingun/lmdb-adapter" "^0.0.11"
-    "@chaingun/types" "^0.0.3"
-    "@notabug/nab-wire-validation" "^0.0.10"
-    dotenv "^8.1.0"
-    gun "^0.2019.930"
-
-"@notabug/nab-tabulator@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.4.0.tgz#0f35faa9af416e43a4aa202f2a23b77d8205ac90"
-  integrity sha512-dC5aeM1h8tsZQ/C7O/cWB2Ha9waLFvuihI6uqu/jYmLygK8nko7pheQSsW+el+rm8BtSwAC3FTQw/ob7fCB+fg==
-  dependencies:
-    "@chaingun/node-adapters" "^0.1.0"
-    "@notabug/client" "^0.0.5"
+    "@notabug/client" "^0.0.8"
     "@notabug/peer" "^0.36.3"
     dotenv "^8.1.0"
+    js-yaml "^3.13.1"
     ramda "^0.26.1"
 
 "@notabug/nab-wire-validation@^0.0.10":
