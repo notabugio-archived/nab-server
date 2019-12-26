@@ -1,6 +1,6 @@
 {
   "name": "@notabug/nab-server",
-  "version": "0.18.1",
+  "version": "0.18.2",
   "description": "notabug.io SocketCluster server",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -64,8 +64,8 @@
     "@chaingun/socketcluster-worker": "^0.4.1",
     "@chaingun/types": "^0.0.4",
     "@notabug/client": "^0.0.8",
-    "@notabug/nab-indexer": "^0.6.1",
-    "@notabug/nab-tabulator": "^0.5.1",
+    "@notabug/nab-indexer": "^0.6.2",
+    "@notabug/nab-tabulator": "^0.5.2",
     "@notabug/nab-wire-validation": "^0.0.10",
     "@types/js-yaml": "^3.12.1",
     "compression": "^1.7.4",

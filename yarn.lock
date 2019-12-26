@@ -601,20 +601,20 @@
     ramda "^0.26.1"
     route-parser "^0.0.5"
 
-"@notabug/nab-indexer@^0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.6.1.tgz#8435c14e3757dc7f11b1b1e83573dfa9f8f06409"
-  integrity sha512-lu+fF2IHln41tIPyuWE7iixi76KoRIzHIzCTpUn2664GjqKx4ZT83OHQzq37kVG/m8HYO4Sx6UsLPlgouUYmsA==
+"@notabug/nab-indexer@^0.6.2":
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.6.2.tgz#24f3b904e72bc565e4ebde58d42d8f298d30ac55"
+  integrity sha512-dG4paAmrYnzgoFBb59/H3BVTtMfyxCXRrDdRZ21Zz+sO8PS0TzS+jE3ozvPZq4kQvk05hum/RmkCp88Nu/0mxA==
   dependencies:
     "@chaingun/node-adapters" "^0.2.3"
     "@notabug/client" "^0.0.8"
     dotenv "^8.1.0"
     js-yaml "^3.13.1"
 
-"@notabug/nab-tabulator@^0.5.1":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.5.1.tgz#7eaeb52370b0ae70f0081176f45849599a4cea1a"
-  integrity sha512-mpoUPpChfouPOS/ZefkgDAtaSR29d+LT2XCpf9SVukb8A4wgM8jxFSsV3OBLW5VWTQwJLZ50NKVut6bKCq51rw==
+"@notabug/nab-tabulator@^0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-tabulator/-/nab-tabulator-0.5.2.tgz#78ee0c3ff75b46d5b9fbe95ac8c995c368996302"
+  integrity sha512-g1nqF4iqO1v7mT6eUa2k2wk1AxkM3iQxNLTW4i5TmpN557NtZHRe77G7PZ33qgbk3iMm01FoO7HjKa5ZWLH/Zw==
   dependencies:
     "@chaingun/node-adapters" "^0.2.3"
     "@notabug/client" "^0.0.8"
