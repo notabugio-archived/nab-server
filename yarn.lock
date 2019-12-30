@@ -378,10 +378,10 @@
     "@chaingun/types" "^0.0.4"
     node-lmdb "^0.7.0"
 
-"@chaingun/lmdb-adapter@^0.0.14":
-  version "0.0.14"
-  resolved "https://registry.yarnpkg.com/@chaingun/lmdb-adapter/-/lmdb-adapter-0.0.14.tgz#5fb583ec30fa8474f6d20647baf04ec24b3d7bcc"
-  integrity sha512-twYJkDUqd43+WORTUdCKctUdV1eOgZ9zzqU2LyzrmerGtN2Dd3flXEGg4JQcyDuXTHnkR9WvNPfotNmVRYk0qQ==
+"@chaingun/lmdb-adapter@^0.0.15":
+  version "0.0.15"
+  resolved "https://registry.yarnpkg.com/@chaingun/lmdb-adapter/-/lmdb-adapter-0.0.15.tgz#6315c25f7a95b645973ae48b224bc21ee3a2721b"
+  integrity sha512-G8SXViwUrHvlNO8KNQRZEpMOTLMeY/Wjpj0wK/u+x5L3CBJpVLY0B4H0XloJx0OmmifDZ5I6X6Ad2avp+YPbLQ==
   dependencies:
     "@chaingun/crdt" "^0.0.1"
     "@chaingun/types" "^0.0.5"
@@ -408,13 +408,13 @@
     "@chaingun/types" "^0.0.3"
     "@types/node" "^12.11.7"
 
-"@chaingun/node-adapters@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@chaingun/node-adapters/-/node-adapters-0.3.1.tgz#63649be2c33fdc5cb3d715090a54c249ec6275f5"
-  integrity sha512-jhjbWi+goQzvrEfG7AFjhYILU9nQ6fELG+eVXeMNgOTg4GyfOn9Na8VjLH6+xP4/c9POk+bi9AEDZtZj2cpZ0A==
+"@chaingun/node-adapters@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@chaingun/node-adapters/-/node-adapters-0.3.2.tgz#1b64404d8cd8d35e088cd57c748cbb99a302a1af"
+  integrity sha512-AsYr/v7891qyiLviiG7GxBDzkNYJ1H0vEAnHKwK1Pgxe95ORng445nVqumEiAPgJM4HN5uFqdEc7UwPAdC43PA==
   dependencies:
     "@chaingun/http-adapter" "^0.6.0"
-    "@chaingun/lmdb-adapter" "^0.0.14"
+    "@chaingun/lmdb-adapter" "^0.0.15"
     "@chaingun/memory-adapter" "^0.0.3"
     "@chaingun/types" "^0.0.5"
     "@types/node" "^12.11.7"
@@ -460,13 +460,13 @@
     "@types/socketcluster-client" "^13.0.3"
     socketcluster-client "^14.3.1"
 
-"@chaingun/socketcluster-worker@^0.5.1":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-worker/-/socketcluster-worker-0.5.1.tgz#bb6fd033e44d65c2d2bc57128ba1ccc265b219ff"
-  integrity sha512-abg6bpXWBBQYGKRBSUuw9peRuYCTexargdUDNnVQsa08jIF0zavT+szNNOWuI7zTejr1EMnjVyU2MFxolZTjKQ==
+"@chaingun/socketcluster-worker@^0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-worker/-/socketcluster-worker-0.5.2.tgz#78f20f51c54de88a9d11029a7b930a6fda4341a4"
+  integrity sha512-VjoHGfskJw6wUWJblkkyltRNQ8TbqTnzmyRvpffKxFKholJfQoUiXcFGQ4A6iOmJfdV2Uadr+KGBC9qLHctqZw==
   dependencies:
     "@chaingun/http-server" "^0.0.3"
-    "@chaingun/node-adapters" "^0.3.1"
+    "@chaingun/node-adapters" "^0.3.2"
     "@chaingun/sear" "^0.0.26"
     "@chaingun/types" "^0.0.5"
     express "^4.17.1"
