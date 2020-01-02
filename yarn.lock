@@ -588,6 +588,28 @@
     ramda "^0.26.1"
     uri-js "^4.2.2"
 
+"@notabug/client@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@notabug/client/-/client-0.0.9.tgz#b4e37cc4070aa51d9aab43a2f3a1efe739db7f96"
+  integrity sha512-gaqcMuNxlxmYdjvCqYrK8oJkP8TewGDEqU4hwgRCYzVNJuUNJXq/cs+h2+e8P69uyON83vQXVam7/nZFKjfy6Q==
+  dependencies:
+    "@chaingun/federation-adapter" "^0.0.5"
+    "@chaingun/http-adapter" "^0.5.1"
+    "@chaingun/sea-client" "^0.0.29"
+    "@chaingun/socketcluster-connector" "^0.0.7"
+    "@lingua-webca/chaingun" "^0.0.5"
+    "@lingua-webca/core" "^0.0.3"
+    "@notabug/peer" "^0.41.2"
+    "@types/js-yaml" "^3.12.1"
+    "@types/object-hash" "^1.3.0"
+    "@types/ramda" "^0.26.37"
+    dotenv "^8.2.0"
+    js-yaml "^3.13.1"
+    object-hash "^2.0.1"
+    query-string "^6.9.0"
+    ramda "^0.26.1"
+    uri-js "^4.2.2"
+
 "@notabug/gun-scope@^0.10.2":
   version "0.10.2"
   resolved "https://registry.yarnpkg.com/@notabug/gun-scope/-/gun-scope-0.10.2.tgz#cb00d2df4379c161c1b7efc78923f5dce1e59bc0"
@@ -624,13 +646,13 @@
     ramda "^0.26.1"
     route-parser "^0.0.5"
 
-"@notabug/nab-indexer@^0.6.2":
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.6.2.tgz#24f3b904e72bc565e4ebde58d42d8f298d30ac55"
-  integrity sha512-dG4paAmrYnzgoFBb59/H3BVTtMfyxCXRrDdRZ21Zz+sO8PS0TzS+jE3ozvPZq4kQvk05hum/RmkCp88Nu/0mxA==
+"@notabug/nab-indexer@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@notabug/nab-indexer/-/nab-indexer-0.6.3.tgz#75f4ddcbd33bd8f152bf9e9fa853111fddf1d96e"
+  integrity sha512-XDPZCAKUZ3Pjqr8QtK3hsNSUCwntJuwNFdhOvyDaj7ov4XaNrd90R5NYXSniaEiQFJ5TI0g9apfjWHePD9A0HA==
   dependencies:
     "@chaingun/node-adapters" "^0.2.3"
-    "@notabug/client" "^0.0.8"
+    "@notabug/client" "^0.0.9"
     dotenv "^8.1.0"
     js-yaml "^3.13.1"
 
@@ -696,6 +718,21 @@
   version "0.39.3"
   resolved "https://registry.yarnpkg.com/@notabug/peer/-/peer-0.39.3.tgz#8ee5fb5fabb5f092a866bf49711267628df0c0a5"
   integrity sha512-kI/OG6ktGygS17OzNI6tVMiOSxzhgmPzAcsjo41aLejX8Ayrt+aUh9STNMNc/jL9yfdYaAjffsMYLPb7DJGCTw==
+  dependencies:
+    "@notabug/gun-scope" "^0.10.2"
+    argon2 "^0.21.0"
+    fast-memoize "^2.5.1"
+    object-hash "^1.3.1"
+    query-string "^6.4.2"
+    ramda "^0.26.1"
+    route-parser "0.0.5"
+    uri-js "^4.2.2"
+    zalgo-promise "1.0.28"
+
+"@notabug/peer@^0.41.2":
+  version "0.41.2"
+  resolved "https://registry.yarnpkg.com/@notabug/peer/-/peer-0.41.2.tgz#81c2f6201ad357c82438134482c7cd473800f931"
+  integrity sha512-0eFw/fG1LT0R5qvq4J49S9lwfXyjkSquDRgUkzBdhZp/6y6+aav2nT85dyJar8krmncgHAeljwoXRHNJfPM6hg==
   dependencies:
     "@notabug/gun-scope" "^0.10.2"
     argon2 "^0.21.0"
