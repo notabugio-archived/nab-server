@@ -6,12 +6,6 @@
       "script": "./build/main/server.js"
     },
     {
-      "name": "storage",
-      "exec_mode": "cluster",
-      "instances": 2,
-      "script": "./build/main/storage.js"
-    },
-    {
       "name": "tabulator",
       "exec_mode": "cluster",
       "instances": 1,

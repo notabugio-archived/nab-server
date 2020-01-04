@@ -339,6 +339,15 @@
     "@types/uuid" "^3.4.6"
     uuid "^3.3.3"
 
+"@chaingun/federation-adapter@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@chaingun/federation-adapter/-/federation-adapter-0.0.6.tgz#4793ce274dc541a304be70e3588f7aec55010894"
+  integrity sha512-GuBKWwvkDeUpIGoDRuF7kZ603W/Nd6xRasJhC1d4xsopReufHdPmFwONbsL1H1bPOKuKVx6ZVN3DiAOgaFQJXQ==
+  dependencies:
+    "@chaingun/types" "^0.0.5"
+    "@types/uuid" "^3.4.6"
+    uuid "^3.3.3"
+
 "@chaingun/http-adapter@^0.5.1":
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/@chaingun/http-adapter/-/http-adapter-0.5.1.tgz#6402c35f123a15287005888a36df4de08260c35c"
@@ -460,16 +469,20 @@
     "@types/socketcluster-client" "^13.0.3"
     socketcluster-client "^14.3.1"
 
-"@chaingun/socketcluster-worker@^0.5.2":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-worker/-/socketcluster-worker-0.5.2.tgz#78f20f51c54de88a9d11029a7b930a6fda4341a4"
-  integrity sha512-VjoHGfskJw6wUWJblkkyltRNQ8TbqTnzmyRvpffKxFKholJfQoUiXcFGQ4A6iOmJfdV2Uadr+KGBC9qLHctqZw==
+"@chaingun/socketcluster-worker@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-worker/-/socketcluster-worker-0.6.0.tgz#50ae4578d2590aada15ed97298dc7e78fd5b583e"
+  integrity sha512-3FnQDpMqyf5+8iuhrecXWVLoxgye8JoI1At7QPzQukiia4mwvfpwtPn2BYI99Nw4IuJQpL6pOc1uGOSC5/4S8Q==
   dependencies:
+    "@chaingun/federation-adapter" "^0.0.6"
     "@chaingun/http-server" "^0.0.3"
     "@chaingun/node-adapters" "^0.3.2"
     "@chaingun/sear" "^0.0.26"
     "@chaingun/types" "^0.0.5"
+    "@types/js-yaml" "^3.12.1"
+    "@types/socketcluster" "^14.0.2"
     express "^4.17.1"
+    js-yaml "^3.13.1"
     morgan "^1.9.1"
     sc-framework-health-check "^2.0.0"
     socketcluster "^14.4.1"
@@ -1101,7 +1114,7 @@
     "@types/sc-broker-cluster" "*"
     "@types/ws" "*"
 
-"@types/socketcluster@*":
+"@types/socketcluster@*", "@types/socketcluster@^14.0.2":
   version "14.0.2"
   resolved "https://registry.yarnpkg.com/@types/socketcluster/-/socketcluster-14.0.2.tgz#424f3de49d3c0a958456c4733ad3bc2eabbe10fe"
   integrity sha512-4Jv4HRbXJkSEwhwuTEMcTAlYpk0bWS0kflsmN6HxHc/ka00doioapPtXUIuiGpqkP9Xjgs+JYOwXwVl+i8onxA==

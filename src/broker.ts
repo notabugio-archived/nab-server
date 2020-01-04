@@ -1,9 +1,8 @@
-// tslint:disable: no-var-requires
-// tslint:disable: no-expression-statement
+// tslint:disable-next-line: no-var-requires
 require('dotenv').config()
+import scClusterBrokerClient from 'scc-broker-client'
 // tslint:disable-next-line: no-submodule-imports
-const SCBroker = require('socketcluster/scbroker')
-const scClusterBrokerClient = require('scc-broker-client')
+import SCBroker from 'socketcluster/scbroker'
 
 // tslint:disable-next-line: no-class
 class Broker extends SCBroker {

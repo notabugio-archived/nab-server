@@ -1,3 +1,5 @@
+// tslint:disable: no-var-requires
+// tslint:disable: object-literal-sort-keys
 /*
   This is the SocketCluster master controller file.
   It is responsible for bootstrapping the SocketCluster master process.
@@ -7,14 +9,15 @@
   each one has a specific meaning within the SC ecosystem.
 */
 require('dotenv').config()
-const path = require('path')
-const argv = require('minimist')(process.argv.slice(2))
-const scHotReboot = require('sc-hot-reboot')
+import minimist from 'minimist'
+import path from 'path'
+import scHotReboot from 'sc-hot-reboot'
+import SocketCluster from 'socketcluster'
+// tslint:disable-next-line: no-submodule-imports
+import fsUtil from 'socketcluster/fsutil'
 
-const fsUtil = require('socketcluster/fsutil')
 const waitForFile = fsUtil.waitForFile
-
-const SocketCluster = require('socketcluster')
+const argv = minimist(process.argv.slice(2))
 
 const workerControllerPath =
   argv.wc || process.env.SOCKETCLUSTER_WORKER_CONTROLLER
@@ -50,7 +53,7 @@ const options: any = {
     Number(process.env.SCC_STATE_SERVER_ACK_TIMEOUT) || null,
   clusterStateServerReconnectRandomness:
     Number(process.env.SCC_STATE_SERVER_RECONNECT_RANDOMNESS) || null,
-  crashWorkerOnError: argv['auto-reboot'] != false,
+  crashWorkerOnError: argv['auto-reboot'] !== false,
   // If using nodemon, set this to true, and make sure that environment is 'dev'.
   killMasterOnSignal: false,
   environment
@@ -58,6 +61,7 @@ const options: any = {
 
 const bootTimeout =
   Number(process.env.SOCKETCLUSTER_CONTROLLER_BOOT_TIMEOUT) || 10000
+// tslint:disable-next-line: no-let
 let SOCKETCLUSTER_OPTIONS: typeof options
 
 if (process.env.SOCKETCLUSTER_OPTIONS) {
@@ -66,16 +70,18 @@ if (process.env.SOCKETCLUSTER_OPTIONS) {
 
 for (const i in SOCKETCLUSTER_OPTIONS) {
   if (SOCKETCLUSTER_OPTIONS.hasOwnProperty(i)) {
+    // tslint:disable-next-line: no-object-mutation
     options[i] = SOCKETCLUSTER_OPTIONS[i]
   }
 }
 
-const start = function() {
+const start = () => {
   const socketCluster = new SocketCluster(options)
 
   socketCluster.on(
     socketCluster.EVENT_WORKER_CLUSTER_START,
-    function(workerClusterInfo: { readonly pid: any }) {
+    (workerClusterInfo: { readonly pid: any }) => {
+      // tslint:disable-next-line: no-console
       console.log('   >> WorkerCluster PID:', workerClusterInfo.pid)
     }
   )
@@ -84,6 +90,7 @@ const start = function() {
     // This will cause SC workers to reboot when code changes anywhere in the app directory.
     // The second options argument here is passed directly to chokidar.
     // See https://github.com/paulmillr/chokidar#api for details.
+    // tslint:disable-next-line: no-console
     console.log(
       `   !! The sc-hot-reboot plugin is watching for code changes in the ${__dirname} directory`
     )
@@ -101,6 +108,7 @@ const start = function() {
       ]
     })
   }
+
 }
 
 const bootCheckInterval =
@@ -130,6 +138,7 @@ Promise.all(filesReadyPromises)
     start()
   })
   .catch(err => {
+    // tslint:disable-next-line: no-console
     console.error(err.stack)
     process.exit(1)
   })

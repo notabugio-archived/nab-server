@@ -1,14 +1,17 @@
 // tslint:disable-next-line: no-var-requires
 require('dotenv').config()
 import GunSocketClusterWorker from '@chaingun/socketcluster-worker'
-import { GunGraphAdapter } from '@chaingun/types'
+import { GunGraphData } from '@chaingun/types'
+import { Validation } from '@notabug/nab-wire-validation'
 import compression from 'compression'
 // tslint:disable-next-line: no-implicit-dependencies
 import express from 'express'
 import fallback from 'express-history-api-fallback'
+import Gun from 'gun'
 import path from 'path'
 import { RateLimiterMemory } from 'rate-limiter-flexible'
-import { createAdapter } from './validation'
+
+const suppressor = Validation.createSuppressor(Gun)
 
 const PERIOD = 60 * 30 // 30m
 
@@ -34,16 +37,11 @@ class NotabugWorker extends GunSocketClusterWorker {
     return app
   }
 
-  protected setupAdapter(): GunGraphAdapter {
-    return createAdapter()
-  }
-
-  protected setupMiddleware(): void {
-    super.setupMiddleware()
-    this.scServer.addMiddleware(
-      this.scServer.MIDDLEWARE_PUBLISH_IN,
-      this.throttleMiddleware.bind(this)
-    )
+  protected async validatePut(graph: GunGraphData): Promise<boolean> {
+    return suppressor.validate({
+      '#': 'dummymsgid',
+      put: graph
+    })
   }
 
   protected publishInMiddleware(
