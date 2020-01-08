@@ -33,7 +33,6 @@ class NotabugWorker extends GunSocketClusterWorker {
     app.use(staticMedia)
     staticMedia.use(express.static(root, { index: false }))
     app.use(fallback('index.html', { root }))
-
     return app
   }
 

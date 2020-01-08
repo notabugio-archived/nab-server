@@ -108,7 +108,6 @@ const start = () => {
       ]
     })
   }
-
 }
 
 const bootCheckInterval =

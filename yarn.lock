@@ -332,6 +332,15 @@
     "@types/uuid" "^3.4.6"
     uuid "^3.3.3"
 
+"@chaingun/federation-adapter@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@chaingun/federation-adapter/-/federation-adapter-0.0.8.tgz#b628021cb9c54e2ca3ef70fb0d971331c49e7569"
+  integrity sha512-QBuIMEO+7ZrL/h7tW9AYL/C7w/gvDIw3cI9nEx48sHKKws2a9hXB7GSXvY+NKWUELS0Ob4B8eP9nfifcUc1bcg==
+  dependencies:
+    "@chaingun/types" "^0.0.6"
+    "@types/uuid" "^3.4.6"
+    uuid "^3.3.3"
+
 "@chaingun/http-adapter@^0.5.1":
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/@chaingun/http-adapter/-/http-adapter-0.5.1.tgz#6402c35f123a15287005888a36df4de08260c35c"
@@ -371,13 +380,13 @@
     "@chaingun/types" "^0.0.4"
     node-lmdb "^0.7.0"
 
-"@chaingun/lmdb-adapter@^0.0.15":
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/@chaingun/lmdb-adapter/-/lmdb-adapter-0.0.15.tgz#6315c25f7a95b645973ae48b224bc21ee3a2721b"
-  integrity sha512-G8SXViwUrHvlNO8KNQRZEpMOTLMeY/Wjpj0wK/u+x5L3CBJpVLY0B4H0XloJx0OmmifDZ5I6X6Ad2avp+YPbLQ==
+"@chaingun/lmdb-adapter@^0.0.17":
+  version "0.0.17"
+  resolved "https://registry.yarnpkg.com/@chaingun/lmdb-adapter/-/lmdb-adapter-0.0.17.tgz#924b1dc7f53c9da41f370e8d2cd889a73ebf997d"
+  integrity sha512-aMHKZyrofPWWzS7Gz53WDlA0kJHXWKmipPIWL4ebYsG10PZzmU4eq+TIviNyw8k3goPcIgZ/w44vLoP8ueeIqg==
   dependencies:
     "@chaingun/crdt" "^0.0.1"
-    "@chaingun/types" "^0.0.5"
+    "@chaingun/types" "^0.0.6"
     node-lmdb "^0.7.0"
 
 "@chaingun/memory-adapter@^0.0.3":
@@ -401,15 +410,15 @@
     "@chaingun/types" "^0.0.3"
     "@types/node" "^12.11.7"
 
-"@chaingun/node-adapters@^0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@chaingun/node-adapters/-/node-adapters-0.3.2.tgz#1b64404d8cd8d35e088cd57c748cbb99a302a1af"
-  integrity sha512-AsYr/v7891qyiLviiG7GxBDzkNYJ1H0vEAnHKwK1Pgxe95ORng445nVqumEiAPgJM4HN5uFqdEc7UwPAdC43PA==
+"@chaingun/node-adapters@^0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@chaingun/node-adapters/-/node-adapters-0.4.1.tgz#b5a3c30b047b8d3e74248de8c66b61ddeb7efad2"
+  integrity sha512-QTVMqt9UwMQHYtOxnkLnT1jfj/pYMX9c1Fdq6DgcIBPFW83W/1tikbnCJQtqU4Qg754r4GACNlOFnaqWi1BTiA==
   dependencies:
     "@chaingun/http-adapter" "^0.6.0"
-    "@chaingun/lmdb-adapter" "^0.0.15"
+    "@chaingun/lmdb-adapter" "^0.0.17"
     "@chaingun/memory-adapter" "^0.0.3"
-    "@chaingun/types" "^0.0.5"
+    "@chaingun/types" "^0.0.6"
     "@types/node" "^12.11.7"
 
 "@chaingun/sea-client@^0.0.29":
@@ -453,16 +462,17 @@
     "@types/socketcluster-client" "^13.0.3"
     socketcluster-client "^14.3.1"
 
-"@chaingun/socketcluster-worker@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-worker/-/socketcluster-worker-0.7.0.tgz#49ec329af7eda14173c0d1ea65381dec10da7997"
-  integrity sha512-hnrNrudQaW2H3aGf4ZdQ0bwcNa7jx8HWXRNqBD1VFKyXkRjQg/8KHn3fTM240AYweovdkZ/lPiyicEZjvzppbQ==
+"@chaingun/socketcluster-worker@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-worker/-/socketcluster-worker-0.8.0.tgz#eead240d8f9bb820b6dcd08ea50ff6733ebe3da2"
+  integrity sha512-B7VYgsddZpSGMKJu3tzOYgQPO50TV4ZMNaRmPhFulphy9yh+HP+zOWyEc8JAY/5hynw0SVCg5AvssUb1q9POrA==
   dependencies:
-    "@chaingun/federation-adapter" "^0.0.7"
+    "@chaingun/client" "^0.0.26"
+    "@chaingun/federation-adapter" "^0.0.8"
     "@chaingun/http-server" "^0.0.3"
-    "@chaingun/node-adapters" "^0.3.2"
+    "@chaingun/node-adapters" "^0.4.1"
     "@chaingun/sear" "^0.0.26"
-    "@chaingun/types" "^0.0.5"
+    "@chaingun/types" "^0.0.6"
     "@types/js-yaml" "^3.12.1"
     "@types/socketcluster" "^14.0.2"
     express "^4.17.1"
@@ -491,6 +501,11 @@
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/@chaingun/types/-/types-0.0.5.tgz#d61b59a8d4a25dec2ba20c66ed1ee1aefb7c889f"
   integrity sha512-T0lefPyxqVWdMsOFKfld5hEPwf3UyuWBNGsmCU45dygrjBmo2pibVLE+DkwQUIpafOE/vg434p+aqs1DkCHIDQ==
+
+"@chaingun/types@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@chaingun/types/-/types-0.0.6.tgz#cc8d45238cf44768843ca7fcb1aaad1e8289bd2b"
+  integrity sha512-VUKhCXHxDb5TMtV+rTFvXrNFRq9yZI1uqCt69UC09kgJfhJQPgtKsCx2kPWABGO8K5bErztmgMmcLPY/6GUp/g==
 
 "@concordance/react@^2.0.0":
   version "2.0.0"
