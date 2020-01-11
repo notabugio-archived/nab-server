@@ -328,22 +328,22 @@
   dependencies:
     "@chaingun/types" "^0.0.3"
 
+"@chaingun/federation-adapter@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@chaingun/federation-adapter/-/federation-adapter-0.0.10.tgz#295c7be1a9e2c252a21647aa16ca6544b0e81b0c"
+  integrity sha512-bj0o6AxJ9Y2Upm/H14eebx1RS7b0gEWJjcLdFn+qWHUKiVbyDoLSdyUg0ZZd9hOy4ozgfv+T8jl1fxokMxrqmQ==
+  dependencies:
+    "@chaingun/crdt" "^0.0.2"
+    "@chaingun/types" "^0.0.6"
+    "@types/uuid" "^3.4.6"
+    uuid "^3.3.3"
+
 "@chaingun/federation-adapter@^0.0.7":
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/@chaingun/federation-adapter/-/federation-adapter-0.0.7.tgz#5bae5b989e84d96aa37b9b0bfd548bba873edc50"
   integrity sha512-/o4koZs9nMI/YzajkG4DM+VsFEiGFjwPyABvI+STyFRWQo2ZY0bwETbnscVKS+uopE3QkChSzC0dhwMRCx3+lw==
   dependencies:
     "@chaingun/types" "^0.0.5"
-    "@types/uuid" "^3.4.6"
-    uuid "^3.3.3"
-
-"@chaingun/federation-adapter@^0.0.9":
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/@chaingun/federation-adapter/-/federation-adapter-0.0.9.tgz#4c7166239f186d000e26c45dea28831cf0e726c0"
-  integrity sha512-JjCALjU4vFWWUwb9wT5Pk+d82FUZsSVlrvfS4EQaU4pH56N/LjzVMZ1R2wpVljUnwgvwrPt2KVApIltVIEf0vA==
-  dependencies:
-    "@chaingun/crdt" "^0.0.2"
-    "@chaingun/types" "^0.0.6"
     "@types/uuid" "^3.4.6"
     uuid "^3.3.3"
 
@@ -451,13 +451,13 @@
     "@types/socketcluster-client" "^13.0.3"
     socketcluster-client "^14.3.1"
 
-"@chaingun/socketcluster-worker@^0.9.1":
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-worker/-/socketcluster-worker-0.9.1.tgz#f9b4a09aa0e4102c28cf754f0d81cf8321c9eb46"
-  integrity sha512-32wvGn+Adu0w1rpnH0fav63EqiUMgpRpETwk6D49TIzDU6zOmn/5g1tk1lcQSsdfyihWI7ijdLLCb+NvMLIKQA==
+"@chaingun/socketcluster-worker@^0.9.2":
+  version "0.9.2"
+  resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-worker/-/socketcluster-worker-0.9.2.tgz#5b0492c37427dca6419afc726bd154833699b98c"
+  integrity sha512-VCKYTsEBj35ObsraaCn7qnILljfNxs5qqFURrhOJCQhe7Vvjdblaf9mxIOxAIeIOTl3h5ZRWPDEvwuiTDUChWA==
   dependencies:
     "@chaingun/client" "^0.0.26"
-    "@chaingun/federation-adapter" "^0.0.9"
+    "@chaingun/federation-adapter" "^0.0.10"
     "@chaingun/http-server" "^0.0.3"
     "@chaingun/node-adapters" "^0.5.0"
     "@chaingun/sear" "^0.0.26"
