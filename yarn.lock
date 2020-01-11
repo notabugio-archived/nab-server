@@ -328,10 +328,10 @@
   dependencies:
     "@chaingun/types" "^0.0.3"
 
-"@chaingun/federation-adapter@^0.0.12":
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/@chaingun/federation-adapter/-/federation-adapter-0.0.12.tgz#bb4d2925529856969cd9b9e73d58af58fdd28d6c"
-  integrity sha512-RNtTUNlrgDRYUuG6uhqmv/jPMsZAg1sy81Lr0LZYqTz20emeNXl1FJVkSUaq15OroUGvDPrWqLPHZ7xPIqAx5Q==
+"@chaingun/federation-adapter@^0.0.13":
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/@chaingun/federation-adapter/-/federation-adapter-0.0.13.tgz#d7bf1167c8b46cd6c46e82dddb40b173d50f2b41"
+  integrity sha512-VETqEY6LHVnQgYm+fvpF04f9OZlY7sjqUnkpqJs89LRCXgqXyw/kIoTQHCC20+ykZOj3a2uGaa/uf9zxQs10jw==
   dependencies:
     "@chaingun/crdt" "^0.0.2"
     "@chaingun/types" "^0.0.6"
@@ -451,13 +451,13 @@
     "@types/socketcluster-client" "^13.0.3"
     socketcluster-client "^14.3.1"
 
-"@chaingun/socketcluster-worker@^0.9.4":
-  version "0.9.4"
-  resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-worker/-/socketcluster-worker-0.9.4.tgz#ed596db32daaea15b2d614d7a8b6ed2c6c429e65"
-  integrity sha512-fowbqJk7vsDp1a8b4lYzqh7Sudm4YuPLd8uF4zs6pIIb4TX/XA1h2IPMNWBa1Xa9nJJaozi5aAzTicMu3WaYuQ==
+"@chaingun/socketcluster-worker@^0.9.5":
+  version "0.9.5"
+  resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-worker/-/socketcluster-worker-0.9.5.tgz#ee4caf0b26d96cc26d4fa2a1c883af72239b09c2"
+  integrity sha512-/SfbghLwfkYdwfD0P3iIT6ifFs9WzpPIaqWlGPnYREM4fjELkAXuL2whSNnUsBTAlapHigp4uitb1bK0Vbkj6w==
   dependencies:
     "@chaingun/client" "^0.0.26"
-    "@chaingun/federation-adapter" "^0.0.12"
+    "@chaingun/federation-adapter" "^0.0.13"
     "@chaingun/http-server" "^0.0.3"
     "@chaingun/node-adapters" "^0.5.0"
     "@chaingun/sear" "^0.0.26"
