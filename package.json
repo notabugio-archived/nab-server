@@ -55,7 +55,7 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "@chaingun/socketcluster-worker": "^0.9.2",
+    "@chaingun/socketcluster-worker": "^0.9.3",
     "@chaingun/types": "^0.0.4",
     "@notabug/nab-indexer": "^0.8.0",
     "@notabug/nab-tabulator": "^0.7.0",
