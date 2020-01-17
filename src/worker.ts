@@ -11,6 +11,8 @@ import Gun from 'gun'
 import path from 'path'
 import { RateLimiterMemory } from 'rate-limiter-flexible'
 
+const DISABLE_VALIDATION = false
+
 const suppressor = Validation.createSuppressor(Gun)
 
 const PERIOD = 60 * 30 // 30m
@@ -37,6 +39,10 @@ class NotabugWorker extends GunSocketClusterWorker {
   }
 
   protected async validatePut(graph: GunGraphData): Promise<boolean> {
+    if (DISABLE_VALIDATION) {
+      return true
+    }
+
     return suppressor.validate({
       '#': 'dummymsgid',
       put: graph
