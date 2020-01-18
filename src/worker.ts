@@ -1,7 +1,7 @@
 // tslint:disable-next-line: no-var-requires
 require('dotenv').config()
+import { GunGraphData } from '@chaingun/sea-client'
 import GunSocketClusterWorker from '@chaingun/socketcluster-worker'
-import { GunGraphData } from '@chaingun/types'
 import { Validation } from '@notabug/nab-wire-validation'
 import compression from 'compression'
 // tslint:disable-next-line: no-implicit-dependencies
@@ -10,6 +10,8 @@ import fallback from 'express-history-api-fallback'
 import Gun from 'gun'
 import path from 'path'
 import { RateLimiterMemory } from 'rate-limiter-flexible'
+import { NabIndexer } from './indexer'
+import { NabTabulator } from './tabulator'
 
 const DISABLE_VALIDATION = false
 
@@ -28,7 +30,19 @@ staticMedia.use(express.static(root, { index: false }))
 
 const dataRe = /things\/.*\/data/
 
-class NotabugWorker extends GunSocketClusterWorker {
+export class NotabugWorker extends GunSocketClusterWorker {
+  constructor(...args: any) {
+    super(...args)
+
+    if (this.id === 1) {
+      new NabTabulator(this).start()
+    }
+
+    if (this.id === 2) {
+      new NabIndexer(this).start()
+    }
+  }
+
   public setupExpress(): any {
     const app = super.setupExpress()
     app.use(compression())
