@@ -360,10 +360,10 @@
     route-parser "^0.0.5"
     sha.js "^2.4.11"
 
-"@chaingun/lmdb-adapter@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@chaingun/lmdb-adapter/-/lmdb-adapter-0.1.1.tgz#2ad08a94055d25b5c7fe2a5a0481d716f70bb403"
-  integrity sha512-Yh6AHNo6L3ViO0iqoyvii3b3rBzssqxCynZ9vTii34934eO00mvN6XeOJlWb7+bUFa1nHNNJoFnKw2X1gYiyYg==
+"@chaingun/lmdb-adapter@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@chaingun/lmdb-adapter/-/lmdb-adapter-0.1.2.tgz#3b46fde6a88157686f9c3d839f221a8d89c980e1"
+  integrity sha512-KPOYCJi499ggqrZ96ApQdm/4HLeKcLj7InnvYuJP9MiGFJ/KZxMLH5zdBH26fw8Gc/hPn8IBtxw45wBTDNXcaQ==
   dependencies:
     "@chaingun/control-flow" "^0.1.0"
     "@chaingun/crdt" "^0.0.1"
@@ -382,13 +382,13 @@
     "@types/ramda" "^0.26.34"
     ramda "^0.26.1"
 
-"@chaingun/node-adapters@^0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@chaingun/node-adapters/-/node-adapters-0.6.1.tgz#fa020c6c99648e641cce64ede7c7d550d8a34718"
-  integrity sha512-jW4l+Wop2rRN6eGS1hS5vqh0rdRslps2mf/VeHqGCHpaJE9DU1fLXa5q5/Ex9pNnPqVZPfRzrJO64oaUCMHxYg==
+"@chaingun/node-adapters@^0.6.2":
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/@chaingun/node-adapters/-/node-adapters-0.6.2.tgz#fcc46402c49a81cbbba81c5d6a3178adb31ad9e2"
+  integrity sha512-M6+nLkT36g0c+7Sob1PhdOYGFtZrpTeptIacz8CNjp3l2ie8/+ud69YmDNX1XPhvUMI1bLdWknCG+nopewtiiw==
   dependencies:
     "@chaingun/http-adapter" "^0.7.0"
-    "@chaingun/lmdb-adapter" "^0.1.1"
+    "@chaingun/lmdb-adapter" "^0.1.2"
     "@chaingun/memory-adapter" "^0.0.3"
     "@chaingun/types" "^0.0.7"
     "@types/node" "^12.11.7"
@@ -412,15 +412,15 @@
     text-encoding "^0.7.0"
     window-or-global "^1.0.1"
 
-"@chaingun/socketcluster-worker@^0.11.1":
-  version "0.11.1"
-  resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-worker/-/socketcluster-worker-0.11.1.tgz#50ba40e11504740fc9259b784813da2c107f91f6"
-  integrity sha512-poRiqo2BokAabojxdg7FwYtC2bk5EtT8isN/HQhqoBmV+WymiDw9iVb9ZKSe5t6EtThPw6WUK9BPCJ2Xz15s1Q==
+"@chaingun/socketcluster-worker@^0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@chaingun/socketcluster-worker/-/socketcluster-worker-0.12.0.tgz#321d7cc7b485f359405cb9b9b99d555f98e1d7f8"
+  integrity sha512-SxgzmvQeBrD+EB44VLJsGKJoN9By5u+8koA2XhCc7c2YyjHuqT680qblhNimsvZMUE9eNOFK2x+xqA4Iq/TJKQ==
   dependencies:
     "@chaingun/client" "^0.0.26"
     "@chaingun/federation-adapter" "^0.1.1"
     "@chaingun/http-server" "^0.0.3"
-    "@chaingun/node-adapters" "^0.6.1"
+    "@chaingun/node-adapters" "^0.6.2"
     "@chaingun/sear" "^0.0.26"
     "@chaingun/types" "^0.0.6"
     "@types/js-yaml" "^3.12.1"
