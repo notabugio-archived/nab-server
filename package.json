@@ -70,7 +70,7 @@
     "sc-hot-reboot": "^1.0.0",
     "scc-broker-client": "^6.1.0",
     "socketcluster": "^14.4.1",
-    "ws": "^7.1.2"
+    "ws": "^7.4.6"
   },
   "devDependencies": {
     "@bitjson/npm-scripts-info": "^1.0.0",
